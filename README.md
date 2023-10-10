@@ -3,7 +3,7 @@ Reading Notes for Code Fellows
 
 👋 I'm Andrea, I live in Virginia Beach.
 
-📫👩🏽‍💻 https://github.com/ariley215
+📫👩🏽‍💻 [Github Profile](https://github.com/ariley215)
 
 ## Growth Mindset
 
