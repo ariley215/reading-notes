@@ -1,6 +1,10 @@
 # Reading Notes
 Reading Notes for Code Fellows
-I'm Andrea, I live in Virginia Beach, VA. Please enjoy my notes :)
+
+👋 I'm Andrea, I live in Virginia Beach.
+
+📫👩🏽‍💻 https://github.com/ariley215
+
 ## Growth Mindset
 
 Growth midset is understanding that you can gain the skills through continued practice despite challenges that arise. It doesn't take just innate talent or intelligence to be successful in an area, **you can develop into someone who has those talents.**
