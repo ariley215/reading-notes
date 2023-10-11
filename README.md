@@ -2,7 +2,7 @@
 Reading Notes for Code Fellows
 
 👋 I'm Andrea, I live in Virginia Beach.
-
+T
 📫👩🏽‍💻 [Github Profile](https://github.com/ariley215)
 
 ## Growth Mindset
@@ -19,3 +19,8 @@ Growth midset is understanding that you can gain the skills through continued pr
 ![Image of brain showing traits of fixed and growth midset on either side.](https://atlassianblog.wpengine.com/wp-content/uploads/NewGrowthMindset2.png)
 
  [Markdown](102-Markdown.md)
+
+ [Text Editor]
+
+ 
+ 
