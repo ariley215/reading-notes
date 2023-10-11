@@ -1,8 +1,8 @@
 What are four important features to look for in a text editor?
 
-  -code completion
-  -syntax highlighting
-  -a variety of themes
+  - code completion
+  - syntax highlighting
+  - a variety of themes
   - good selection of extensions
 
 What do the following commands do?
