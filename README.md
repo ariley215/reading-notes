@@ -1,7 +1,12 @@
 # Reading Notes
+
 Reading Notes for Code Fellows
 
-👋 I'm Andrea, I live in Virginia Beach.
+👋 Hi, I'm Andrea
+
+- The Princess Bride is the best movie of all time 
+- I love music (of the EDM, Hip-Hop, and RnB persuasion)
+- I think animals are more tolerable than most people
 
 📫👩🏽‍💻 [Github Profile](https://github.com/ariley215)
 
@@ -12,6 +17,7 @@ Growth midset is understanding that you can gain the skills through continued pr
 >A growth mindset is synonymous with a love of learning.
 
 ### Reminders
+
 1. If it's hard, you're growing.
 2. Frustration is not always a bad thing.
 3. If it was easy, everyone would do it.
@@ -19,10 +25,5 @@ Growth midset is understanding that you can gain the skills through continued pr
 ![Image of brain showing traits of fixed and growth midset on either side.](https://atlassianblog.wpengine.com/wp-content/uploads/NewGrowthMindset2.png)
 
  [Markdown](102-Markdown.md)
- 
+
  [Text Editor](TextEditor.md)
- 
-
-
- 
- 
