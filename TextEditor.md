@@ -17,7 +17,10 @@ What do the following commands do?
 
 **touch** create new file
 
+Whenever we refer to either a file or directory on the command line, we are in fact referring to a *path*. ie. A *path* is a means to get to a particular file or directory on the system.
+
 Arguments are extra instructions given to a command
+    -  ( /etc ). When we do this it tells ls not to list our current directory but instead to list that directories contents.
 
 cd projects 
     
