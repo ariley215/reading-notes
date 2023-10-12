@@ -20,6 +20,8 @@ Welcome to my notes for Code Fellows
 
 [Text Editors](TextEditor.md)
 
+[Intro to Git](GitIntro.)
+
 [Unit 4](HTML.md)
 
 [Unit 5](CSS.md)
