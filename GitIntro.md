@@ -12,7 +12,7 @@ Cloning in Git
 
 - Copying a git repository from another server
 
-git add filename 
+git add filename
 
 git add *
 
