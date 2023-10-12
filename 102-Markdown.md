@@ -11,7 +11,6 @@ It's universal. It can be used in all different types of documents. I can also b
 
 - use a (#) to create a heading
 - there are 6 levels of headings
-
     - 1-most important (#)
     - 6-least imoprtant (######)
 

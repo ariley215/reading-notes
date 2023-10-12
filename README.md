@@ -11,3 +11,53 @@ Welcome to my notes for Code Fellows
 📫👩🏽‍💻 [Github Profile](https://github.com/ariley215)
 
 ## Table of Contents
+
+### 102 Notes
+
+[Growth Mindset](GrowthMidset.md)
+
+[Markdown](102-Markdown.md)
+
+[Text Editors](TextEditor.md)
+
+[Unit 4](HTML.md)
+
+[Unit 5](CSS.md)
+
+[Unit 6](ActivateJave.md)
+
+[Unit 7](ProgramJava.md)
+
+[Unit 8](OperatorsLoops.md)
+
+### 201 Notes
+
+[Unit 1](201-1.md)
+
+[Unit 2](201-2.md)
+
+[Unit 3](201-3.md)
+
+[Unit 4](201-4.md)
+
+[Unit 5](201-5.md)
+
+[Unit 6](201-6.md)
+
+[Unit 7](201-7.md)
+
+[Unit 8](201-8.md)
+
+[Unit 9](201-9.md)
+
+[Unit 10](201-10.md)
+
+[Unit 11](201-11.md)
+
+[Unit 12](201-12.md)
+
+[Unit 13](201-13.md)
+
+[Unit 14](201-14.md)
+
+[Unit 15](201.15.md)
