@@ -22,6 +22,9 @@
   - eg. what effect does running that line have? (rather than " what does it look like")
   - *semantic element*- it's name is it's job.
 
+*Tip for semantic markup*
+
+- When approaching which markup to use, ask yourself, "What element(s) best describe/represent the data that I'm going to populate?" For example, is it a list of data?; ordered, unordered?; is it an article with sections and an aside of related information?; does it list out definitions?; is it a figure or image that needs a caption?; should it have a header and a footer in addition to the global site-wide header and footer?; etc.
 
 ## Wireframing
 
