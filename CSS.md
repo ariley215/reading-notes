@@ -17,10 +17,22 @@
     - h1 {
   color: red;
   font-size: 5em;
+    }
 
-![anoatomoy of css structure](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured/declaration.png) 
+![anatomy of css structure](https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_is_structured/declaration.png) 
 
+Differnt ways to insert CSS
 
-What is the purpose of CSS?
-What are the three ways to insert CSS into your project?
-Write an example of a CSS rule that would give all <p> elements red text.
+External CSS
+
+- Each HTML page must include a reference to the external style sheet file inside the <link> element, inside the head section.
+- An external style sheet can be written in any text editor, and must be saved with a .css extension.
+
+Internal CSS
+
+- Internal styles are defined within the <style> element, inside the <head> section of an HTML page:
+
+Inline CSS
+
+- An inline style may be used to apply a unique style for a single element.
+- **Tip** An inline style loses many of the advantages of a style sheet (by mixing content with presentation). Use this method sparingly.
