@@ -26,7 +26,7 @@ Welcome to my notes for Code Fellows
 
 [CSS](CSS.md)
 
-[Unit 6](ActivateJave.md)
+[Dynamic Web Pages with JavaScript](ActivateJave.md)
 
 [Unit 7](ProgramJava.md)
 
