@@ -12,7 +12,6 @@ Keywords for declaring a variable (creating one)
 - var <-- don't do this in 102
 - (none) <-- don't do this in 102
 
-
 let x = 1; // create a variable called x, assign it the value of the number 1
 
 const y = 2; // create a variable called y, assign it the value of the number 2
