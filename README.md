@@ -28,7 +28,7 @@ Welcome to my notes for Code Fellows
 
 [Dynamic Web Pages with JavaScript](ActivateJava.md)
 
-[Unit 7](ProgramJava.md)
+[Program with JavaScript](ProgramJava.md)
 
 [Unit 8](OperatorsLoops.md)
 
