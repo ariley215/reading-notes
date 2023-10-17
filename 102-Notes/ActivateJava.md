@@ -34,3 +34,4 @@ console.log(); --> logs whatever is in the parenthesis to the developer console
 prompt(); --> a way to get input from the user, whatever we want to ask them goes in the parenthesis
 
 document.write(); --> whatever is in the parenthesis will be written to the HTML document
+
