@@ -30,7 +30,7 @@ Welcome to my notes for Code Fellows
 
 [Program with JavaScript](ProgramJava.md)
 
-[Unit 8](OperatorsLoops.md)
+[Operators and Loops](OperatorsLoops.md)
 
 ### 201 Notes
 
