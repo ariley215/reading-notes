@@ -16,7 +16,7 @@ Welcome to my notes for Code Fellows
 
 [Growth Mindset](GrowthMidset.md)
 
-[Markdown](/Users/andrea/projects/courses/code-102/reading-notes/102-Notes/102-Markdown.md)
+[Markdown](102-Markdown.md)
 
 [Text Editors](TextEditor.md)
 
