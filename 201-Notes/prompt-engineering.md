@@ -2,9 +2,9 @@
 
 
 
-User
-how do i produce a song
-ChatGPT
+User:how do i produce a song
+
+ChatGPT:
 Producing a song involves a combination of creative and technical skills. Here's a step-by-step guide to help you produce your own song:
 
 Concept and Pre-Production:
