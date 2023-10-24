@@ -36,9 +36,9 @@ Welcome to my notes for Code Fellows
 
 [Pre Work](201-Notes/prompt-engineering.md)
 
-[Unit 1](201-Notes/201-1.md)
+[Web Page and HTML Basics](201-Notes/201-1.md)
 
-[Unit 2](201-Notes/201-2.md)
+[Basics of HTML CSS JS](201-Notes/201-2.md)
 
 [Unit 3](201-Notes/201-3.md)
 
