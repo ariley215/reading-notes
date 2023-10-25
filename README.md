@@ -40,7 +40,7 @@ Welcome to my notes for Code Fellows
 
 [Basics of HTML CSS JS](201-Notes/201-2.md)
 
-[Unit 3](201-Notes/201-3.md)
+[CSS Box Model, HTML Lists, Control Flow](201-Notes/201-3.md)
 
 [Unit 4](201-Notes/201-4.md)
 
