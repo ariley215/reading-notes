@@ -42,11 +42,11 @@ Welcome to my notes for Code Fellows
 
 [CSS Box Model, HTML Lists, Control Flow](201-Notes/201-3.md)
 
-[Unit 4](201-Notes/201-4.md)
+[JS Functions HTML links](201-Notes/201-4.md)
 
-[Unit 5](201-Notes/201-5.md)
+[HTML Media CSS Basics](201-Notes/201-5.md)
 
-[Unit 6](201-Notes/201-6.md)
+[Object Basics and DOM Intro](201-Notes/201-6.md)
 
 [Unit 7](201-Notes/201-7.md)
 
