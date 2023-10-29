@@ -48,7 +48,7 @@ Welcome to my notes for Code Fellows
 
 [Object Basics and DOM Intro](201-Notes/201-6.md)
 
-[Unit 7](201-Notes/201-7.md)
+[Object-Oriented Programming adn HTML Tables](201-Notes/201-7.md)
 
 [Unit 8](201-Notes/201-8.md)
 
