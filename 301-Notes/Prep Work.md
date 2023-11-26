@@ -1,6 +1,8 @@
 # Arrow Functions
 
 ## Syntax 
+
+```javascript
 () => expression
 
 param => expression
@@ -19,25 +21,29 @@ param => {
 
 (param1, paramN) => {
   statements
-}
+} 
+```
 
 ## Step by Step Traditional Function => Arrow Function
 
-// Traditional anonymous function
-(function (a) {
+ Traditional anonymous function
+    (function (a) {
   return a + 100;
-});
+    });
 
-// 1. Remove the word "function" and place arrow between the argument and opening body brace
-(a) => {
+ 1. Remove the word "function" and place arrow between the argument and opening body brace
+    
+    (a) => {
   return a + 100;
-};
+    };
 
-// 2. Remove the body braces and word "return" — the return is implied.
-(a) => a + 100;
+2. Remove the body braces and word "return" — the return is implied.
 
-// 3. Remove the parameter parentheses
-a => a + 100;
+    (a) => a + 100;
+
+ 3. Remove the parameter parentheses
+
+    a => a + 100;
 
 Returning object literals using the expression body syntax (params) => { object: literal } does not work as expected.
 
