@@ -50,22 +50,54 @@ Welcome to my notes for Code Fellows
 
 [Object-Oriented Programming and HTML Tables](201-Notes/201-7.md)
 
-[Unit 8](201-Notes/201-8.md)
+[Flex Boxes](201-Notes/201-8.md)
 
-[Unit 9](201-Notes/201-9.md)
+[Web Forms](201-Notes/201-9.md)
 
-[Unit 10](201-Notes/201-10.md)
+[Debugging](201-Notes/201-10.md)
 
-[Unit 11](201-Notes/201-11.md)
+[Audio Video Images and Grid](201-Notes/201-11.md)
 
-[Unit 12](201-Notes/201-12.md)
+[Chart.js Canvas](201-Notes/201-12.md)
 
-[Unit 13](201-Notes/201-13.md)
+[Local Storage](201-Notes/201-13.md)
 
-[Unit 14](201-Notes/201-14.md)
+[CSS Transitions and Animations](201-Notes/201-14.md)
 
-[Unit 15](201-Notes/201-15.md)
+[Psychological Safety](201-Notes/201-15.md)
 
 ## 301 Notes
 
+[Intro to React](301-Notes/301-1.md)
+
+[State and Props](301-Notes/301-2.md)
+
+[Passing Functions as Props](301-Notes/301-3.md)
+
+[React and Form](301-Notes/301-4.md)
+
+[Putting it all Together(React)](301-Notes/301-5.md)
+
+[REST](301-Notes/301-6.md)
+
+[Node.js](301-Notes/301-7.md)
+
+[API's](301-Notes/301-8.md)
+
+[Functional Programming](301-Notes/301-9.md)
+
+[Call Stacks and Error Codes](301-Notes/301-10.md)
+
+[Mongo DB and Mongoose](301-Notes/301-11.md)
+
+[Status Codes](301-Notes/301-12.md)
+
+[CRUD](301-Notes/301-13.md)
+
+[Diversity in Tech](301-Notes/301-14.md)
+
+[Authentication](301-Notes/301-15.md)
+
 ## 401 Notes
+
+
