@@ -84,9 +84,80 @@ INNER JOIN another_table
 WHERE condition(s)
 ORDER BY column, … ASC/DESC
 LIMIT num_limit OFFSET num_offset
+
 ```
 
+## Database Management
+
+In SQL, the *database schema* is what describes the structure of each table, and the datatypes that each column of the table can contain.
+
+Use an **INSERT** statement when inserting data into a table.
+
+- Declares which table to write into, the columns of data that we are filling, and one or more rows of data to insert
+
+In some cases, if you have incomplete data and the table contains columns that support default values, you can insert rows with only the columns of data you have by specifying them explicitly.
+
+```SQL
+
+INSERT INTO mytable
+(column, another_column, …)
+VALUES (value_or_expr, another_value_or_expr, …),
+      (value_or_expr_2, another_value_or_expr_2, …),
+      …;
+
+```
+
+**UPDATE** statement is used to update existing data in a table.
+
+- This works by taking multiple column/value pairs, and applying those changes to each and every row that satisfies the constraint in the **WHERE** clause
+- Leaving out the **WHERE** clause causes all the data to be updated.
+    - Write the constraint first and test it in a **SELECT** query to make sure you are updating the right rows
+
+```SQL
+
+UPDATE mytable
+SET column = value_or_expr, 
+    other_column = another_value_or_expr, 
+    …
+WHERE condition;
+
+```
+
+**DELETE** statement are similar to **UPDATE** it needs a **WHERE** condition or all the rows will be deleted.
+
+**CREATE TABLE** statement:
+
+```SQL
+CREATE TABLE IF NOT EXISTS mytable (
+    column DataType TableConstraint DEFAULT default_value,
+    another_column DataType TableConstraint DEFAULT default_value,
+    …
+);
+
+```
+
+*Example using movies table, showing constraints*
+
+```SQL
+
+CREATE TABLE movies (
+    id INTEGER PRIMARY KEY,
+    title TEXT,
+    director TEXT,
+    year INTEGER, 
+    length_minutes INTEGER
+);
+
+```
+
+- If there already exists a table with the same name, the SQL implementation will usually throw an error, so to suppress the error and skip creating a table if one exists, you can use the IF NOT EXISTS clause.
+
+**ALTER TABLE** statements add, remove, or modify columns and table constraints.
+
+- The syntax for adding a new column is similar to the syntax when creating new rows in the **CREATE TABLE** statement
+
 ### Sources:
+
 [SQL Bolt](https://sqlbolt.com/)
 
 [SQL Tutorial](https://www.computer-pdf.com/3-sql-database-tutorial-for-beginners)
