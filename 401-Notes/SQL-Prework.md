@@ -155,6 +155,18 @@ CREATE TABLE movies (
 **ALTER TABLE** statements add, remove, or modify columns and table constraints.
 
 - The syntax for adding a new column is similar to the syntax when creating new rows in the **CREATE TABLE** statement
+  - In some databases like MySQL, you can even specify where to insert the new column using the FIRST or AFTER clauses
+
+**DROP** can be used to remove columns in some databases
+
+**RENAME TO** will renmae the table
+
+Each database implementation supports different methods of altering their tables, so it's always best to consult your database docs before proceeding:
+
+MySQL, Postgres, SQLite, Microsoft SQL Server.
+
+**DROP TABLE** statement, which differs from the **DELETE** statement in that it also removes the table schema from the database entirely.
+
 
 ### Sources:
 
