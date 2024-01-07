@@ -169,8 +169,11 @@ MySQL, Postgres, SQLite, Microsoft SQL Server.
 
 ## Tutorial Completion Images
 
-![LessonOne](401-Notes/screenshots/Screenshot 2024-01-02 at 3.23.46 PM (2).png)
-### Sources:
+![First-Lesson](401-Notes/screenshots/Screenshot 2024-01-02 at 3.23.46 PM (2).png)
+![second-lesson](401-Notes/screenshots/Screenshot-2024-01-02-at-3.49.04-PM.png)
+
+
+### Sources
 
 [SQL Bolt](https://sqlbolt.com/)
 
