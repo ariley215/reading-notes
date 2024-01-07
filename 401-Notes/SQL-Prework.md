@@ -159,13 +159,19 @@ CREATE TABLE movies (
 
 **DROP** can be used to remove columns in some databases
 
-**RENAME TO** will renmae the table
+**RENAME TO** will rename the table
 
 Each database implementation supports different methods of altering their tables, so it's always best to consult your database docs before proceeding:
 
 MySQL, Postgres, SQLite, Microsoft SQL Server.
 
 **DROP TABLE** statement, which differs from the **DELETE** statement in that it also removes the table schema from the database entirely.
+
+## Tutorial Completion Images
+
+<img src="401-Notes/screenshots/Screenshot 2024-01-02 at 3.23.46 PM (2).png" alt="Your Image" width="100" height="100">
+
+
 
 
 ### Sources:
