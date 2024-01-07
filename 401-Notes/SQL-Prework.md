@@ -169,7 +169,7 @@ MySQL, Postgres, SQLite, Microsoft SQL Server.
 
 ## Tutorial Completion Images
 
-<img src="401-Notes/screenshots/Screenshot 2024-01-02 at 3.23.46 PM (2).png" alt="Your Image" width="100" height="100">
+<img src="401-Notes/screenshots/Screenshot 2024-01-02 at 3.23.46 PM (2).png" alt="Your Image" width=100px height=100px >
 
 
 
