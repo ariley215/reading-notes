@@ -170,7 +170,7 @@ MySQL, Postgres, SQLite, Microsoft SQL Server.
 ## Tutorial Completion Images
 
 ![First-Lesson](401-Notes/screenshots/Screenshot2024-01-02at3.23.46 PM(2).jpg)
-![second-lesson](401-Notes/screenshots/Screenshot-2024-01-02-at-3.49.04-PM.png)
+![second-lesson](/Users/andrea/projects/courses/code-401/reading-notes/401-Notes/screenshots/Screenshot 2024-01-02 at 7.15.03 PM.png)
 
 
 ### Sources
