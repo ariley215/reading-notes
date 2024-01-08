@@ -101,3 +101,5 @@ Welcome to my notes for Code Fellows
 ## 401 Notes
 
 [SQL Prework](401-Notes/SQL-Prework.md)
+
+[Big O Notation](401-Notes/401-1.md)
