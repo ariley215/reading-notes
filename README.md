@@ -103,3 +103,5 @@ Welcome to my notes for Code Fellows
 [SQL Prework](401-Notes/SQL-Prework.md)
 
 [Big O Notation](401-Notes/401-1.md)
+
+[Data Structures and Algorithms](401-Notes/DataStructuresAndAlgorithms.md)
