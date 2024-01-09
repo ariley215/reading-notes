@@ -105,3 +105,7 @@ Welcome to my notes for Code Fellows
 [Big O Notation](401-Notes/401-1.md)
 
 [Data Structures and Algorithms](401-Notes/DataStructuresAndAlgorithms.md)
+
+[Engineering Readings](401-Notes/EngineeringReadings.md)
+
+[Testing and Modules](401-Notes/401-2.md)
