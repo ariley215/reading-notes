@@ -109,3 +109,5 @@ Welcome to my notes for Code Fellows
 [Engineering Readings](401-Notes/EngineeringReadings.md)
 
 [Testing and Modules](401-Notes/401-2.md)
+
+[FileIO and Exceptions](401-Notes/401-3.md)
