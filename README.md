@@ -111,3 +111,5 @@ Welcome to my notes for Code Fellows
 [Testing and Modules](401-Notes/401-2.md)
 
 [FileIO and Exceptions](401-Notes/401-3.md)
+
+[Pytest Classes and Objects](401-Notes/401-4.md)
