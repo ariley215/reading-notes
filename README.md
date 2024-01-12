@@ -113,3 +113,7 @@ Welcome to my notes for Code Fellows
 [FileIO and Exceptions](401-Notes/401-3.md)
 
 [Pytest Classes and Objects](401-Notes/401-4.md)
+
+[Linked List](401-Notes/401-5.md)
+
+[Random Module Test and Risk](401-Notes/401-5.md)
