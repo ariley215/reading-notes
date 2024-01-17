@@ -121,3 +121,5 @@ Welcome to my notes for Code Fellows
 [Random Module, Tests, and Risk](401-Notes/401-6.md)
 
 [Scope](401-Notes/401-7.md)
+
+[List Comprehensions and Decorators](401-Notes/401-8.md)
