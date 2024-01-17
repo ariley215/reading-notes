@@ -117,3 +117,7 @@ Welcome to my notes for Code Fellows
 [Linked List](401-Notes/401-5.md)
 
 [Random Module Test and Risk](401-Notes/401-5.md)
+
+[Random Module, Tests, and Risk](401-Notes/401-6.md)
+
+[Scope](401-Notes/401-7.md)
