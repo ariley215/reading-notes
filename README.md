@@ -123,3 +123,7 @@ Welcome to my notes for Code Fellows
 [Scope](401-Notes/401-7.md)
 
 [List Comprehensions and Decorators](401-Notes/401-8.md)
+
+[Stacks and Queues](401-Notes/401-9.md)
+
+[Data Analysis](401-Notes/401-11.md)
