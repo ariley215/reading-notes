@@ -127,3 +127,5 @@ Welcome to my notes for Code Fellows
 [Stacks and Queues](401-Notes/401-9.md)
 
 [Data Analysis](401-Notes/401-11.md)
+
+[Panadas](401-Notes/401-12.md)
