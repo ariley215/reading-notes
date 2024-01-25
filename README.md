@@ -129,3 +129,7 @@ Welcome to my notes for Code Fellows
 [Data Analysis](401-Notes/401-11.md)
 
 [Panadas](401-Notes/401-12.md)
+
+[Linear Regressions](401-Notes/401-13.md)
+
+[Data Visualization](401-Notes/401-14.md)
