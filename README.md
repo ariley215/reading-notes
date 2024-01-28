@@ -133,3 +133,7 @@ Welcome to my notes for Code Fellows
 [Linear Regressions](401-Notes/401-13.md)
 
 [Data Visualization](401-Notes/401-14.md)
+
+[Trees](401-Notes/401-15.md)
+
+[Serverless Functions](401-Notes/401-16.md)
