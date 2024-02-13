@@ -141,3 +141,7 @@ Welcome to my notes for Code Fellows
 [Web Scraping](401-Notes/401-17.md)
 
 [Cryptography](401-Notes/401-18.md)
+
+[Automation](401-Notes/401-19.md)
+
+[Intro to Django](401-Notes/401-26.md)
