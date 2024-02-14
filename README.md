@@ -145,3 +145,7 @@ Welcome to my notes for Code Fellows
 [Automation](401-Notes/401-19.md)
 
 [Intro to Django](401-Notes/401-26.md)
+
+[Django Models](401-Notes/401-27.md)
+
+[Django CRUD and Forms](401-Notes/401-28.md)
