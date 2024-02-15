@@ -149,3 +149,5 @@ Welcome to my notes for Code Fellows
 [Django Models](401-Notes/401-27.md)
 
 [Django CRUD and Forms](401-Notes/401-28.md)
+
+[Django Custom User](401-Notes/401-29.md)
