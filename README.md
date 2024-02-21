@@ -151,3 +151,9 @@ Welcome to my notes for Code Fellows
 [Django CRUD and Forms](401-Notes/401-28.md)
 
 [Django Custom User](401-Notes/401-29.md)
+
+[Hash Tables]()
+
+[Django REST Framework & Docker](401-Notes/401-30.md)
+
+[Authentication](401-Notes/401-33.md)
