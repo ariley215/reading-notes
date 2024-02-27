@@ -152,8 +152,12 @@ Welcome to my notes for Code Fellows
 
 [Django Custom User](401-Notes/401-29.md)
 
-[Hash Tables]()
+[Hash Tables](401-Notes/401-30.md)
 
-[Django REST Framework & Docker](401-Notes/401-30.md)
+[Django REST Framework & Docker](401-Notes/401-31.md)
+
+[Permissions](401-Notes/401-32.md)
 
 [Authentication](401-Notes/401-33.md)
+
+[API Deployment](401-Notes/401-34.md)
