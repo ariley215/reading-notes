@@ -161,3 +161,17 @@ Welcome to my notes for Code Fellows
 [Authentication](401-Notes/401-33.md)
 
 [API Deployment](401-Notes/401-34.md)
+
+[Whiteboard Tips](401-Notes/401-36.md)
+
+[React Refresh](401-Notes/401-37.md)
+
+[React Refresh 2](401-Notes/401-38.md)
+
+[React Refresh 3](401-Notes/401-39.md)
+
+[React Refresh 4](401-Notes/401-41.md)
+
+[Pythonisms](401-Notes/401-42.md)
+
+[Ethics in Tech](401-Ethics.md)
