@@ -24,7 +24,7 @@ Strings --> 'words in quotes' OR '34' --> this is seen as text
 
 Boolean -->  True OR False
 
-## Basic Java Commands
+## Basic JavaScript Commands
 
 
 alert(); --> pop up box with a message, message is in parenthesis
