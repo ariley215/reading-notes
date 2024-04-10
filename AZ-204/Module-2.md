@@ -158,3 +158,68 @@ In App Service logs:
   - Warning: Warning, error, critical
   - Information: Inof, warning, error, critical
   - Verbose: Trace, debugg, info, warning, error, critical(all categories)
+
+To enable application and web server logging, use **file system logging option.**
+
+- In Quota (MB), specify the disk quota for the application logs
+
+Set Retentions period(number of days logs are retained)
+
+In your application code, you use the usual logging facilities to send log messages to the application logs.
+
+- Python applications can use the OpenCensus package to send logs to the application diagnostics log
+- By default, ASP.NET Core uses the Microsoft.Extensions.Logging.AzureAppServices logging provider
+
+### Stream Logs
+
+*Some types of logging buffer write to the log file, which can result in out of order events in the stream. For example, an application log entry that occurs when a user visits a page may be displayed in the stream before the corresponding HTTP log entry for the page request.*
+
+Azure portal - To stream logs in the Azure portal, navigate to your app and select Log stream.
+
+
+Azure CLI - To stream logs live in Cloud Shell, use the following command:
+
+```bash
+az webapp log tail --name appname --resource-group myResourceGroup
+```
+
+Local console - To stream logs in the local console, install Azure CLI and sign in to your account. Once signed in, follow the instructions shown for Azure CLI.
+
+### Access Log files
+
+If you configure the Azure Storage blobs option for a log type, you need a client tool that works with Azure Storage
+
+- Linux/container apps: https://<app-name>.scm.azurewebsites.net/api/logs/docker/zip
+- Windows apps: https://<app-name>.scm.azurewebsites.net/api/dump
+
+## Configure secruity certificates
+
+A certificate uploaded into an app is stored in a deployment unit that is bound to the app service plan's resource group and region combination (internally called a webspace).
+
+- This makes the certificate accessible to other apps in the same resource group and region combination.
+
+Options you have for adding certificates in App Service:
+
+- Create a free App Service managed certificate
+  - A private certificate that's free of charge and easy to use if you just need to secure your custom domain in App Service.
+- Purchase an App Service certificate
+  - A private certificate that's managed by Azure. It combines the simplicity of automated certificate management and the flexibility of renewal and export options.
+- Import a certificate from Key Vault
+  - Useful if you use Azure Key Vault to manage your certificates.
+- Upload a private certificate
+  - If you already have a private certificate from a third-party provider, you can upload it.
+- Upload a public certificate
+  - Public certificates aren't used to secure custom domains, but you can load them into your code if you need them to access remote resources
+
+### Private certificate requirements
+
+If you want to use a private certificate in App Service, your certificate must meet the following requirements:
+
+- Exported as a password-protected PFX file, encrypted using triple DES.
+- Contains private key at least 2048 bits long
+- Contains all intermediate certificates in the certificate chain
+
+To secure a custom domain in a TLS binding requires:
+
+- Contains an Extended Key Usage for server authentication (OID = 1.3.6.1.5.5.7.3.1)
+- Signed by a trusted certificate authority
