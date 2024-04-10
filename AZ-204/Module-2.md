@@ -49,6 +49,7 @@ For others, better to use app settings.
 *There is one case where you may want to use connection strings instead of app settings for non-.NET languages: certain Azure database types are backed up along with the app only if you configure a connection string for the database in your App Service app.*
 
 ex.
+
 ```json
 [
   {
@@ -105,7 +106,7 @@ settings:
 - Script processor
 - arguments
 
-Each app has the default root path (/) mapped to **D:\home\site\wwwroot**, where your code is deployed by default. 
+Each app has the default root path (/) mapped to **D:\home\site\wwwroot**, where your code is deployed by default.
 
 If your app root is in a different folder, or if your repository has more than one application, you can edit or add virtual applications and directories.
 
@@ -176,7 +177,6 @@ In your application code, you use the usual logging facilities to send log messa
 
 Azure portal - To stream logs in the Azure portal, navigate to your app and select Log stream.
 
-
 Azure CLI - To stream logs live in Cloud Shell, use the following command:
 
 ```bash
@@ -223,3 +223,26 @@ To secure a custom domain in a TLS binding requires:
 
 - Contains an Extended Key Usage for server authentication (OID = 1.3.6.1.5.5.7.3.1)
 - Signed by a trusted certificate authority
+
+### Creating a free managed certificate
+
+plan needed: Basic, Standard, Premium, or Isolated tier.
+
+limitations:
+
+- Doesn't support wildcard certificates.
+- Doesn't support usage as a client certificate by using certificate thumbprint, which is planned for deprecation and removal.
+- Doesn't support private DNS.
+- Isn't exportable.
+- Isn't supported in an App Service Environment (ASE).
+- Only supports alphanumeric characters, dashes (-), and periods (.).
+
+### Import an App Service Certificate
+
+Azure manages these tasks:
+
+- Takes care of the purchase process from certificate provider.
+- Performs domain verification of the certificate.
+- Maintains the certificate in Azure Key Vault.
+- Manages certificate renewal.
+- Synchronize the certificate automatically with the imported copies in App Service apps.
