@@ -183,3 +183,7 @@ Welcome to my notes for Code Fellows
 ## AZ-204
 
 [Explore Azure App Service](AZ-204/Module-1.md)
+
+[Configure Web App Settings](AZ-204/Module-2.md)
+
+[Scale apps in Azure App Service](AZ-204/Module-3.md)
