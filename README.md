@@ -187,3 +187,9 @@ Welcome to my notes for Code Fellows
 [Configure Web App Settings](AZ-204/Module-2.md)
 
 [Scale apps in Azure App Service](AZ-204/Module-3.md)
+
+[](AZ-204/Module-4.md)
+
+[](AZ-204/Module-5.md)
+
+[](AZ-204/module-6.md)

@@ -164,6 +164,7 @@ Let's say you have a function that needs to access Azure Blob Storage. Here's ho
 - The identity used must be granted the necessary permissions to access the target Azure service.
 - Follow the principle of least privilege when granting permissions to the identity.
 
+
 ## Additional Resources
 
 - [Azure Functions triggers and bindings](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)
@@ -172,3 +173,43 @@ Let's say you have a function that needs to access Azure Blob Storage. Here's ho
 - [Azure Functions documentation](https://docs.microsoft.com/azure/azure-functions/)
 - [Azure Functions triggers and bindings](https://docs.microsoft.com/azure/azure-functions/functions-triggers-bindings)
 - [Code and test Azure Functions locally](https://docs.microsoft.com/azure/azure-functions/functions-run-local)
+
+-------------------------------------------------------------------------------------
+
+## Key Steps to Create an Azure Function using Visual Studio Code
+
+1. **Create a local project**:
+   - In Visual Studio Code, choose the Azure icon and select "Create Function..."
+   - Choose C# as the language and .NET 6 as the runtime
+   - Select "HTTP trigger" as the function template
+   - Provide a function name (e.g. "HttpExample") and namespace
+
+2. **Run the function locally**:
+   - Press F5 to start the function app project in the debugger
+   - The endpoint of your HTTP-triggered function is displayed in the Terminal panel
+   - Right-click the HttpExample function and choose "Execute Function Now..." to test it locally
+
+3. **Sign in to Azure**:
+   - If you're not already signed in, choose the Azure icon and select "Sign in to Azure..."
+
+4. **Create Azure resources**:
+   - Choose the "Create resource..." button and select "Create Function App in Azure..."
+   - Provide a globally unique name for the function app and select the appropriate runtime and region
+   - Visual Studio Code will create the necessary Azure resources (resource group, storage account, function app, etc.)
+
+5. **Deploy the code**:
+   - In the Azure explorer, select the "Deploy..." button and choose "Deploy to Function App..."
+   - Select the function app you created in the previous step to deploy your code
+
+6. **Run the function in Azure**:
+   - In the Azure explorer, expand your function app and right-click the HttpExample function
+   - Select "Execute Function Now..." and provide the request body to test the function running in Azure
+
+The key benefits of using Visual Studio Code for Azure Functions development include:
+
+- Integrated development and deployment experience
+- Ability to test functions locally before deploying to Azure
+- Seamless sign-in and Azure resource management within the IDE
+- Support for various function triggers and bindings
+
+Overall, this workflow allows you to efficiently create, test, and deploy Azure Functions directly from your local development environment using Visual Studio Code.
