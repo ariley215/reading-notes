@@ -6,7 +6,6 @@ Objectives:
 - Explain how data is securely stored.
 - Enable a storage account for static website hosting.
 
-Here's a study guide page covering the key information about Azure Blob storage:
 
 ## What is Azure Blob Storage?
 
@@ -40,8 +39,6 @@ Azure Storage provides different access tiers for block blob data:
 
 You can switch between these access tiers at any time based on the usage pattern of your data.
 
-Here is a page for the digital study guide on discovering Azure Blob storage resource types:
-
 ## Discovering Azure Blob Storage Resource Types
 
 Azure Blob storage offers three main resource types that you should be familiar with for the AZ-204 exam:
@@ -67,9 +64,8 @@ Azure Blob storage offers three main resource types that you should be familiar 
   - **Page blobs**: Store random access files up to 8 TB in size. Serve as disks for Azure virtual machines.
 - The URI for a blob is similar to `https://myaccount.blob.core.windows.net/mycontainer/myblob` or `https://myaccount.blob.core.windows.net/mycontainer/myvirtualdirectory/myblob`.
 
-You're right, my previous page did not include the table comparing the key management options for Azure Storage encryption. Let me update the page to incorporate that information:
 
-# Exploring Azure Storage Security Features
+## Exploring Azure Storage Security Features
 
 Azure Storage provides a comprehensive set of security capabilities that allow you to build secure applications:
 
@@ -111,6 +107,35 @@ Key access | Microsoft only | Microsoft, Customer | Customer only
 
 - OS and data disks used by Azure Virtual Machines can be encrypted using Azure Disk Encryption.
 
+Here is a page for the digital study guide on discovering static website hosting in Azure Storage:
+
+## Discovering Static Website Hosting in Azure Storage
+
+Azure Storage provides the ability to host static websites directly from a storage container, without the need for a traditional web server.
+
+### Enabling Static Website Hosting
+
+- To enable static website hosting, you need to locate your storage account in the Azure portal and:
+  1. Select "Static website" to display the configuration page.
+  2. Enable static website hosting for the account.
+  3. Specify an index document name (e.g. `index.html`) and an error document path (e.g. `404.html`).
+  4. Save the changes.
+- When you enable static website hosting, Azure Storage automatically creates a container named `$web` to store the files for your static website.
+
+### Impact of Access Level on the `$web` Container
+
+- The access level you set on the `$web` container doesn't impact the primary static website endpoint, as these files are served through anonymous access requests.
+- However, changing the public access level of the `$web` container does impact the primary blob service endpoint.
+  - For example, if you change the access level to "Blob (anonymous read access for blobs only)", users can access the files using both the static website endpoint and the primary blob service endpoint.
+- Disabling public access on the storage account by using the public access setting doesn't affect static websites hosted in that storage account.
+
+### Mapping a Custom Domain
+
+- You can make your static website available via a custom domain.
+- It's easier to enable HTTP access for your custom domain, as Azure Storage natively supports it.
+- To enable HTTPS, you'll need to use Azure CDN, as Azure Storage doesn't yet natively support HTTPS with custom domains.
+- Follow the steps in the "Map a custom domain to an Azure Blob Storage endpoint" documentation to set up a custom domain for your static website.
+
 ### Key Takeaways
 
 - A storage account provides a unique namespace for your data in Azure Blob storage.
@@ -123,13 +148,18 @@ Key access | Microsoft only | Microsoft, Customer | Customer only
 - Selecting the right storage account type and access tier can help you optimize costs for your blob data.
 - Azure Blob storage is optimized for storing large amounts of unstructured data
 - There are different storage account types (Standard and Premium) and access tiers (Hot, Cool, Cold, Archive) to choose from based on your usage patterns
+- *General-purpose v2* supports blobs, files, queues, and tables. It's recommended for most scenarios using Azure Storage.
+
 - Blob storage is accessible via the Azure Storage REST API, Azure PowerShell, Azure CLI, or Azure Storage client libraries
-- Selecting the right storage account type and access tier can help you optimize costs for your blob data
 - Azure Storage provides robust security features to protect data at rest and in transit.
 - Encryption is enabled by default, and you can manage encryption keys.
 - Identity and access control can be managed using Azure AD and RBAC.
 - Secure data transfer can be achieved using client-side encryption, HTTPS, or SMB 3.0.
 - Azure Disk Encryption can be used to encrypt OS and data disks in Azure VMs.
+- Azure Storage allows you to host static websites directly, without the need for a traditional web server.
+- Enable static website hosting by configuring the index document, error document, and enabling the feature in the Azure portal.
+- The access level of the `$web` container doesn't impact the static website endpoint, but it can affect the primary blob service endpoint.
+- You can map a custom domain to your static website, but HTTPS support requires the use of Azure CDN.
 
 ### Additional Resources
 
@@ -140,3 +170,6 @@ Key access | Microsoft only | Microsoft, Customer | Customer only
 - [Azure Storage encryption for data at rest](https://docs.microsoft.com/azure/storage/common/storage-service-encryption)
 - [Secure access to data in Azure Storage](https://docs.microsoft.com/azure/storage/common/storage-network-security)
 - [Azure Disk Encryption](https://docs.microsoft.com/azure/virtual-machines/disk-encryption-overview)
+- [Static website hosting in Azure Storage](https://docs.microsoft.com/azure/storage/blobs/storage-blob-static-website)
+- [Map a custom domain to an Azure Blob Storage endpoint](https://docs.microsoft.com/azure/storage/blobs/storage-custom-domain-name)
+- [Remediate anonymous public read access to blob data](https://docs.microsoft.com/azure/storage/blobs/anonymous-read-access-prevent)
