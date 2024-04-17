@@ -188,8 +188,8 @@ Welcome to my notes for Code Fellows
 
 [Scale apps in Azure App Service](AZ-204/Module-3.md)
 
-[](AZ-204/Module-4.md)
+[Azure App Service Deployment Slots](AZ-204/Module-4.md)
 
-[](AZ-204/Module-5.md)
+[Azure Functions](AZ-204/Module-5.md)
 
-[](AZ-204/module-6.md)
+[Azure Functions Development](AZ-204/module-6.md)
