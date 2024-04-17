@@ -193,3 +193,5 @@ Welcome to my notes for Code Fellows
 [Azure Functions](AZ-204/Module-5.md)
 
 [Azure Functions Development](AZ-204/module-6.md)
+
+[Explore Blob Storage](AZ-204/Module-7.md)
