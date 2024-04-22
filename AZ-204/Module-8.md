@@ -35,9 +35,7 @@ Azure Blob storage lifecycle management offers a rule-based policy to:
 
 For example, you could move data from Hot to Cool after 2 weeks, then to Archive after 1 month, to optimize for performance and cost.
 
-Here is a page for the digital study guide on discovering Blob storage lifecycle policies:
-
-# Discovering Azure Blob Storage Lifecycle Policies
+## Discovering Azure Blob Storage Lifecycle Policies
 
 Azure Blob storage offers lifecycle management policies that allow you to automatically transition data between storage tiers or delete data based on defined rules.
 
@@ -119,8 +117,52 @@ Here's an example of a lifecycle policy that:
 }
 ```
 
+## Implementing Azure Blob Storage Lifecycle Policies
+
+You can create, edit, or remove Blob storage lifecycle policies using various methods:
+
+## Azure Portal
+
+There are two ways to add a policy through the Azure portal:
+
+1. **Azure Portal List View**:
+   - Go to your storage account, then under "Data management", select "Lifecycle management".
+   - Switch to the "List view" tab.
+   - Click "Add rule" and fill out the "Action set" form fields, such as tiering blobs to the Cool tier after 30 days.
+   - Optionally, add a "Filter set" to limit the rule to specific containers or prefixes.
+   - Review and add the new policy.
+
+2. **Azure Portal Code View**:
+   - Follow the first three steps from the List View method.
+   - Switch to the "Code view" tab, and you can directly edit the policy in JSON format.
+   - For example, you can create a policy to move block blobs starting with "sample-container/log" to the Cool tier after 30 days.
+   - Save the changes to update the policy.
+
+## Azure CLI
+
+To create a lifecycle policy using the Azure CLI:
+
+1. Write the policy in a JSON file, for example, `policy.json`.
+2. Run the following command to create the policy:
+
+   ```bash
+   az storage account management-policy create \
+       --account-name <storage-account> \
+       --policy @policy.json \
+       --resource-group <resource-group>
+   ```
+
+   Replace `<storage-account>` with the name of your storage account and `<resource-group>` with the name of your resource group.
+
+   Note that lifecycle management policies must be read or written in full. Partial updates are not supported.
+
 ## Key Takeaways
 
+- You can create, edit, and remove Blob storage lifecycle policies using the Azure portal, Azure PowerShell, Azure CLI, or REST APIs.
+- The policies are defined as a JSON document with one or more rules, each with a filter set and an action set.
+- Filters can limit the policy to specific blob types, container prefixes, or blob index tags.
+- Supported actions include tiering blobs to the Cool or Archive tiers, and deleting blobs or snapshots based on age.
+- When using the Azure CLI, you need to write the full policy to a JSON file and then apply it to the storage account.
 - Blob storage lifecycle policies allow you to define rules for transitioning data between storage tiers or deleting data.
 - Policies consist of one or more rules, with each rule defining a filter set and an action set.
 - Filters limit the rule actions to a subset of blobs, based on blob type, prefix, or blob index tags.
@@ -133,5 +175,6 @@ Here's an example of a lifecycle policy that:
 
 - [Azure Blob storage access tiers](https://docs.microsoft.com/azure/storage/blobs/storage-blob-storage-tiers)
 - [Manage the Azure Blob storage lifecycle](https://docs.microsoft.com/azure/storage/blobs/storage-lifecycle-management-concepts)
-- [Manage the Azure Blob storage lifecycle](https://docs.microsoft.com/azure/storage/blobs/storage-lifecycle-management-concepts)
+
 - [Blob storage lifecycle management policy examples](https://docs.microsoft.com/azure/storage/blobs/storage-lifecycle-management-examples)
+- [Azure CLI: az storage account management-policy create](https://docs.microsoft.com/cli/azure/storage/account/management-policy?view=azure-cli-latest#az-storage-account-management-policy-create)
