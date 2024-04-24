@@ -48,7 +48,8 @@ When you create a function app in Azure, you must choose a hosting plan for your
 
 2. **Premium Plan**
 
-   - Automatically scales based on demand using pre-warmed workers, which run applications with no delay after being idle.
+   - Automatically scales based on demand using pre-warmed workers. 
+      - run applications with no delay after being idle.
    - Runs on more powerful instances and connects to virtual networks.
 
 3. **Dedicated Plan (App Service Plan)**
@@ -83,7 +84,12 @@ The `functionTimeout` property in the `host.json` project file specifies the tim
 
 ### Storage Account Requirements
 
-On any plan, a function app requires a general Azure Storage account that supports Blob, Queue, Files, and Table storage. 
+On any plan, a function app requires a general Azure Storage account that supports:
+
+- Blob  
+- Queue
+- Files
+- Table storage
 
 The same storage account can be used by your triggers and bindings to store application data. 
 
