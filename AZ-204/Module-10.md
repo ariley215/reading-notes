@@ -1,5 +1,15 @@
 # Explore Azure Cosmos DB
 
+Objectives:
+
+- Identify the key benefits provided by Azure Cosmos DB
+- Describe the elements in an Azure Cosmos DB account and how they are organized
+- Explain the different consistency levels and choose the correct one for your project
+- Explore the APIs supported in Azure Cosmos DB and choose the appropriate API for your solution
+- Describe how request units impact costs
+- Create Azure Cosmos DB resources by using the Azure portal.
+
+
 ## Key Benefits of Azure Cosmos DB
 
 - Low latency: Guaranteed sub-10ms reads and writes at the 99th percentile.
@@ -19,6 +29,17 @@
 - Items: Automatically partitioned and indexed.
 
 You can create up to 50 Cosmos DB accounts per Azure subscription (soft limit).
+
+### Resource Hierarchy Summary
+
+The resource hierarchy in Azure Cosmos DB is as follows:
+
+![Azure Cosmos DB heirachy](https://learn.microsoft.com/en-us/training/wwl-azure/explore-azure-cosmos-db/media/cosmos-entities.png)
+
+1. Azure Cosmos DB Account
+   - Databases
+     - Containers
+       - Items
 
 ## Choosing the Right Consistency Level in Azure Cosmos DB
 
