@@ -148,7 +148,7 @@ You can configure your container app to use one or more of these providers for u
 - When enabled, every incoming HTTP request passes through the security layer before being handled by your application.
 - The middleware handles user authentication, session management, and injecting identity information into HTTP request headers.
 
-![Authentication and Authorization in Azure Container Apps][]
+![Authentication and Authorization in Azure Container Apps](https://learn.microsoft.com/en-us/training/wwl-azure/implement-azure-container-apps/media/container-apps-authorization-architecture.png)
 
 ## Authentication Flow
 
@@ -161,3 +161,106 @@ The authentication flow differs depending on whether you want to sign in with th
 
 - To restrict app access only to authenticated users, set the `Restrict access` setting to `Require authentication`.
 - To authenticate but not restrict access, set the `Restrict access` setting to `Allow unauthenticated access`.
+
+
+# Manage Revisions and Secrets in Azure Container Apps
+
+## Revisions
+
+- Azure Container Apps implements container app versioning by creating revisions
+- A revision is an immutable snapshot of a container app version
+- You can use revisions to release a new version or quickly revert to an earlier version
+- New revisions are created when you update your application with revision-scope changes, such as:
+  - Changing the container image
+  - Modifying environment variables
+  - Updating compute resources (CPU, memory)
+  - Scaling parameters
+- You can customize the revision name by setting the revision suffix
+- You can list all revisions associated with a container app using the `az containerapp revision list` command
+
+```bash
+# Update container app with a new image, creating a new revision
+az containerapp update \
+  --name <APPLICATION_NAME> \
+  --resource-group <RESOURCE_GROUP_NAME> \
+  --image <IMAGE_NAME>
+
+# List all revisions for a container app
+az containerapp revision list \
+  --name <APPLICATION_NAME> \
+  --resource-group <RESOURCE_GROUP_NAME> \
+  -o table
+```
+
+## Secrets
+
+- Azure Container Apps allows your application to securely store sensitive configuration values as secrets
+- Secrets are scoped to an application, outside of any specific revision
+- Adding, removing, or changing secrets doesn't generate new revisions
+- You can reference secrets in environment variables for your container app
+- Container Apps doesn't support direct Azure Key Vault integration, but you can use managed identity to access Key Vault from your app
+
+```bash
+# Create a container app with a secret
+az containerapp create \
+  --resource-group "my-resource-group" \
+  --name queuereader \
+  --environment "my-environment-name" \
+  --image demos/queuereader:v1 \
+  --secrets "queue-connection-string=$CONNECTION_STRING"
+
+# Reference a secret in an environment variable
+az containerapp create \
+  --resource-group "my-resource-group" \
+  --name myQueueApp \
+  --environment "my-environment-name" \
+  --image demos/myQueueApp:v1 \
+  --secrets "queue-connection-string=$CONNECTIONSTRING" \
+  --env-vars "QueueName=myqueue" "ConnectionString=secretref:queue-connection-string"
+```
+
+- When a secret is updated or deleted, you should deploy a new revision that no longer references the old secret, then deactivate all revisions that reference the deleted secret.
+- Ensure you deploy a new revision before deleting a secret to avoid breaking existing revisions that rely on the secret.
+
+# Explore Dapr Integration with Azure Container Apps
+
+## Dapr Overview
+
+- Dapr is a distributed application runtime that simplifies the development of microservice-based applications.
+- Dapr provides capabilities for enabling application intercommunication through messaging, service-to-service calls, state management, and more.
+- Dapr is an open-source, Cloud Native Computing Foundation (CNCF) project.
+
+## Dapr Integration in Azure Container Apps
+
+- Azure Container Apps provides a managed and supported Dapr integration, handling Dapr version upgrades seamlessly.
+- Dapr is exposed to each container app through a Dapr sidecar, allowing your app to invoke Dapr APIs via HTTP or gRPC.
+
+![Dapr Integration in Azure Container Apps](https://learn.microsoft.com/en-us/training/wwl-azure/implement-azure-container-apps/media/azure-container-apps-distributed-application-runtime-building-blocks.png)
+
+## Dapr APIs
+
+Azure Container Apps supports the following stable Dapr APIs:
+
+| Dapr API | Description |
+| --- | --- |
+| Service-to-service Invocation | Discover services and perform reliable, direct service-to-service calls with automatic mTLS authentication and encryption. |
+| State Management | Provides state management capabilities for transactions and CRUD operations. |
+| Pub/Sub | Allows publisher and subscriber container apps to intercommunicate via an intermediary message broker. |
+| Bindings | Trigger your applications based on events. |
+| Actors | Dapr actors are message-driven, single-threaded, units of work designed to quickly scale. |
+| Observability | Send tracing information to an Application Insights backend. |
+| Secrets | Access secrets from your application code or reference secure values in your Dapr components. |
+
+## Dapr Enablement
+
+You can configure Dapr in Azure Container Apps using:
+
+- Container Apps CLI
+- Infrastructure as Code (IaC) templates (Bicep or ARM)
+- Azure Portal
+
+## Dapr Components and Scopes
+
+- Dapr uses a modular design where functionality is delivered as a component.
+- Dapr components are environment-level resources that can be shared across container apps or scoped to specific container apps.
+- Application scopes can be used to ensure components are loaded at runtime by only the appropriate container apps.
