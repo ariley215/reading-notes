@@ -18,3 +18,4 @@ RBAC - Role-Based Access Control
 Dapr - Distributed Application Runtime
 IaC - Infrastructure as Code
 ARM - Azure Resource Manager
+MSAL - Microsoft Authentication Libraries
