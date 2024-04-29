@@ -50,5 +50,4 @@ Step 5: Clean up other resources
 
 1. After you have finished running the app, you can delete the resources created for this exercise by running the command `az group delete --name az204-blob-rg --no-wait`. Confirm the deletion when prompted.
 
-Conclusion:
-In this guide, you learned how to create Blob storage resources using the Azure Blob storage client library in a console app. You performed actions such as creating a container, uploading blobs, listing blobs, downloading blobs, and deleting a container.
+
