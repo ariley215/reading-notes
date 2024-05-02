@@ -21,3 +21,6 @@ ARM - Azure Resource Manager
 MSAL - Microsoft Authentication Libraries
 GUID - Globally Unique Identifier
 SAS - Shared Access Signature
+HSM - Hardware Security Module
+Azure RBAC - Azure role-based access control
+TLS - Transport Layer Security
