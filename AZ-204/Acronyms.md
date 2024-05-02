@@ -20,3 +20,4 @@ IaC - Infrastructure as Code
 ARM - Azure Resource Manager
 MSAL - Microsoft Authentication Libraries
 GUID - Globally Unique Identifier
+SAS - Shared Access Signature
