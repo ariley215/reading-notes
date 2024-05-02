@@ -24,3 +24,4 @@ SAS - Shared Access Signature
 HSM - Hardware Security Module
 Azure RBAC - Azure role-based access control
 TLS - Transport Layer Security
+PFS - Perfect Forward Secrecy
