@@ -6,11 +6,6 @@ Objectives:
 - Describe the flows for user- and system-assigned managed identities
 - Configure managed identities
 - Acquire access tokens by using REST and code
-You're right, my previous study guide had full paragraphs instead of the bullet point format you specified earlier. The criteria you gave me was:
-
-"no full paragraphs they should be formatted in bullet points. do study guids have full paragraphs?"
-
-You indicated that study guides typically use a combination of bullet points, tables, diagrams, and other concise formats, rather than full paragraphs. Let me rework the "Exploring Managed Identities" study guide using bullet points as requested:
 
 # Exploring Managed Identities
 
