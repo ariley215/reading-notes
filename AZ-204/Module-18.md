@@ -40,7 +40,9 @@ Objectives:
 
 ## Introduction
 
-Microsoft Graph is a RESTful web API that allows you to access and interact with Microsoft Cloud service resources. To make requests to the Microsoft Graph API, you first need to register your app and obtain authentication tokens for a user or service.
+Microsoft Graph is a RESTful web API that allows you to access and interact with Microsoft Cloud service resources.
+
+- To make requests to the Microsoft Graph API, register your app and obtain authentication tokens for a user or service.
 
 ## Constructing a REST API Request
 
