@@ -353,6 +353,59 @@ Understand the application and configuration of advanced policies in Azure API M
 5. **Alternative Security Mechanisms:**
    - Besides subscription keys, Azure API Management supports additional security mechanisms such as OAuth 2.0, client certificates, and IP allow listing, providing multiple layers of security.
 
+### **Securing APIs Using Certificates in Azure API Management**
 
+**Key Concepts:**
 
----
+1. **TLS Client Authentication:**
+   - Enables the API Management gateway to authenticate clients based on certificates provided in the client requests.
+   - The gateway can validate several properties of a certificate:
+     - **Certificate Authority (CA):** Only allow certificates signed by a specified CA.
+     - **Thumbprint:** Allow certificates containing a specific thumbprint.
+     - **Subject:** Only allow certificates with a certain subject.
+     - **Expiration Date:** Only allow certificates that have not expired.
+
+2. **Certificate Verification:**
+   - **Issuer Verification:** Check the issuer of the certificate. If the issuer is a trusted certificate authority configured in Azure, the certificate is accepted.
+   - **Direct Verification:** For certificates issued directly by partners, such as self-signed certificates, verify authenticity manually or through pre-agreed methods.
+
+3. **Enabling Client Certificates in the Consumption Tier:**
+   - In the Consumption tier, suited for serverless technologies like Azure Functions, enabling client certificates requires specific configuration on the Custom domains page.
+
+4. **Certificate Authorization Policies:**
+   - Policies can be created to authorize access based on certificate properties. Examples of XML policies include:
+     - **Check the Thumbprint:**
+
+       ```xml
+       <choose>
+           <when condition="@(context.Request.Certificate == null || context.Request.Certificate.Thumbprint != 'desired-thumbprint')" >
+               <return-response>
+                   <set-status code="403" reason="Invalid client certificate" />
+               </return-response>
+           </when>
+       </choose>
+       ```
+
+     - **Check against Multiple Certificates:**
+
+       ```xml
+       <choose>
+           <when condition="@(context.Request.Certificate == null || !context.Request.Certificate.Verify() || !context.Deployment.Certificates.Any(c => c.Value.Thumbprint == context.Request.Certificate.Thumbprint))" >
+               <return-response>
+                   <set-status code="403" reason="Invalid client certificate" />
+               </return-response>
+           </when>
+       </choose>
+       ```
+
+     - **Validate Issuer and Subject:**
+
+       ```xml
+       <choose>
+           <when condition="@(context.Request.Certificate == null || context.Request.Certificate.Issuer != 'trusted-issuer' || context.Request.Certificate.SubjectName.Name != 'expected-subject-name')" >
+               <return-response>
+                   <set-status code="403" reason="Invalid client certificate" />
+               </return-response>
+           </when>
+       </choose>
+       ```
