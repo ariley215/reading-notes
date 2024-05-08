@@ -23,3 +23,4 @@ SAS - Shared Access Signature
 HSM - Hardware Security Module
 TLS - Transport Layer Security
 PFS - Perfect Forward Secrecy
+SSL - Secure Sockets Layer

@@ -27,10 +27,6 @@ The following packages contain the classes used to work with Blob Storage data r
 
 By using the Azure Blob Storage client library, you can effectively interact with Azure Blob Storage and perform various operations on blobs and containers within your storage account.
 
-## Create a Client Object
-
-Working with Azure resources using the Azure SDK begins with creating a client object. This section focuses on creating client objects to interact with storage accounts, containers, and blobs in the storage service.
-
 ## Creating a BlobServiceClient Object
 
 To interact with resources at the storage account level, you need to create a BlobServiceClient object. The BlobServiceClient provides methods to retrieve and configure account properties, as well as list, create, and delete containers within the storage account.
