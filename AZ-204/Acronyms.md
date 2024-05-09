@@ -8,7 +8,7 @@ SQL - Structured Query Language
 RUs - Request Units
 SDK - Software development kit
 UDF - User-defined function
-DNS - Domain Name System.
+DNS - Domain Name System
 
 - DNS is a hierarchical naming system that translates human-readable domain names (such as example.com) into IP addresses.
 
@@ -24,3 +24,4 @@ HSM - Hardware Security Module
 TLS - Transport Layer Security
 PFS - Perfect Forward Secrecy
 SSL - Secure Sockets Layer
+GA - General Availability
