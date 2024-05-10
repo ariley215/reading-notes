@@ -149,7 +149,9 @@ To further refine message processing, subscriptions can use rules and actions to
 
 ### Creation and Management
 
-Queues, topics, and subscriptions can be created and managed using the Azure portal, PowerShell, CLI, or Resource Manager templates. Messages can be sent and received using clients written in popular programming languages such as C#, Java, Python, and JavaScript.
+Queues, topics, and subscriptions can be created and managed using the Azure portal, PowerShell, CLI, or Resource Manager templates. 
+
+Messages can be sent and received using clients written in popular programming languages such as C#, Java, Python, and JavaScript.
 
 ### Practical Usage
 
@@ -197,3 +199,158 @@ While Service Bus provides mechanisms for automatic serialization, it is recomme
 
 - **Control Serialization:** Explicitly manage the serialization and deserialization processes to ensure compatibility and optimize performance across different platforms and services.
 - **Manage AMQP Encodings:** Handle AMQP encoded messages carefully, as they are designed specifically for AMQP clients and might be challenging for HTTP clients to decode.
+
+## Explore Azure Queue Storage
+
+Azure Queue Storage allows for storing a vast number of messages, which can be accessed globally through authenticated HTTP or HTTPS calls. 
+
+It is particularly useful for managing large backlogs of work that need to be processed asynchronously.
+
+### Key Components
+
+The Azure Queue Storage service is composed of the following elements:
+
+- **Storage Account:** The gateway for all access to Azure Storage, including queues. Each storage account can contain multiple queues.
+- **Queue:** A specific queue within the storage account that holds messages. Each queue is identified by a unique name that must be in all lowercase.
+- **Message:** Individual messages within the queue that can be up to 64 KB in size. Messages can be in any format and have a configurable time-to-live.
+
+![Queue service components](https://learn.microsoft.com/en-us/training/wwl-azure/discover-azure-message-queue/media/queue-storage-service-components.png)
+
+### URL Format and Access
+
+Queues are addressable using a specific URL format, which allows for straightforward access and integration with other services:
+
+```
+https://<storage account>.queue.core.windows.net/<queue>
+```
+
+For example, a queue named 'images-to-download' in a storage account named 'myaccount' would be accessed via:
+
+```
+https://myaccount.queue.core.windows.net/images-to-download
+```
+
+### Message Properties
+
+- **Size Limit:** Each message can be up to 64 KB.
+- **Time-to-Live:** Starting with version 2017-07-29, the maximum time-to-live for a message can be any positive number or -1, indicating that the message does not expire. If not specified, the default is seven days.
+
+### Use Cases
+
+- **Asynchronous Task Processing:** Queue Storage is commonly used to decouple application components. Messages representing tasks to be processed are enqueued and can be processed independently by different components.
+- **Load Leveling:** By using queues, applications can manage varying loads efficiently. This is achieved by storing excessive demands in the queue, allowing application components to process messages at a steady rate.
+
+## Manage Azure Queue Storage Using .NET
+
+This section explores how to work with Azure Queue Storage using .NET, focusing on queue management and message handling. The .NET Azure SDK provides intuitive client libraries that facilitate these operations.
+
+### Necessary NuGet Packages
+
+To work with Azure Queue Storage in a .NET project, include the following NuGet packages:
+
+- **Azure.Core:** Provides shared primitives, abstractions, and helpers for the Azure SDK client libraries.
+- **Azure.Storage.Queues:** Enables interaction with Azure Queue Storage.
+- **System.Configuration.ConfigurationManager:** Allows access to configuration files.
+
+### Creating a Queue Service Client
+
+Begin by creating an instance of the `QueueClient` class. This client will be used to interact with the queue:
+
+```csharp
+// Instantiate a QueueClient
+QueueClient queueClient = new QueueClient(connectionString, queueName);
+```
+
+### Creating a Queue
+
+Ensure the queue exists before attempting to interact with it:
+
+```csharp
+// Get the connection string from app settings
+string connectionString = ConfigurationManager.AppSettings["StorageConnectionString"];
+QueueClient queueClient = new QueueClient(connectionString, queueName);
+
+// Create the queue if it doesn't exist
+queueClient.CreateIfNotExists();
+```
+
+### Inserting a Message into a Queue
+
+Insert messages into the queue using the `SendMessage` method:
+
+```csharp
+if (queueClient.Exists())
+{
+    // Send a message to the queue
+    queueClient.SendMessage(message);
+}
+```
+
+### Peeking at Messages
+
+Peek at messages without removing them from the queue:
+
+```csharp
+if (queueClient.Exists())
+{
+    // Peek at the next message
+    PeekedMessage[] peekedMessage = queueClient.PeekMessages();
+}
+```
+
+### Changing the Contents of a Queued Message
+
+Modify the contents of a message in the queue:
+
+```csharp
+if (queueClient.Exists())
+{
+    QueueMessage[] message = queueClient.ReceiveMessages();
+
+    // Update the message contents
+    queueClient.UpdateMessage(message[0].MessageId, 
+                              message[0].PopReceipt, 
+                              "Updated contents",
+                              TimeSpan.FromSeconds(60.0));  // Extend visibility timeout
+}
+```
+
+### Dequeuing Messages
+
+Process and remove a message from the queue:
+
+```csharp
+if (queueClient.Exists())
+{
+    QueueMessage[] retrievedMessage = queueClient.ReceiveMessages();
+    Console.WriteLine($"Dequeued message: '{retrievedMessage[0].Body}'");
+
+    // Delete the message after processing
+    queueClient.DeleteMessage(retrievedMessage[0].MessageId, retrievedMessage[0].PopReceipt);
+}
+```
+
+### Getting the Queue Length
+
+Determine the number of messages in the queue:
+
+```csharp
+if (queueClient.Exists())
+{
+    QueueProperties properties = queueClient.GetProperties();
+    int cachedMessagesCount = properties.ApproximateMessagesCount;
+
+    Console.WriteLine($"Number of messages in queue: {cachedMessagesCount}");
+}
+```
+
+### Deleting a Queue
+
+Remove a queue and all its messages:
+
+```csharp
+if (queueClient.Exists())
+{
+    queueClient.Delete();
+}
+```
