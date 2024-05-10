@@ -9,10 +9,6 @@ Objectives:
 
 # Azure App Configuration Service
 
-## Overview
-
-Azure App Configuration is a service that provides a centralized place to manage application settings and feature flags.
-
 - Useful for modern, distributed applications that have configuration settings spread across multiple components.
 
 ## Key Benefits of App Configuration
@@ -95,7 +91,6 @@ Example hierarchical key structures:
 3. **Explore Hierarchical Keys and Labels**: Organize your configuration data using a hierarchical key structure and leverage labels to create variants.
 4. **Integrate with Your Application**: Use the appropriate client library to connect your application to the App Configuration store and retrieve the necessary configuration data.
 
-Got it, my apologies. Here is the full text with the changes you requested:
 
 # Manage Application Features with Azure App Configuration
 
