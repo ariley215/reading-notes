@@ -28,4 +28,5 @@ GA - General Availability
 DLQ - Dead-Letter Queue
 AMQP - Advanced Messaging Queueing Protocol
 AMP - Application Performance Monitoring
-
+CDN - Content Delivery Network
+BGP - Border Gateway Protocol
