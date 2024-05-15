@@ -27,3 +27,5 @@ SSL - Secure Sockets Layer
 GA - General Availability
 DLQ - Dead-Letter Queue
 AMQP - Advanced Messaging Queueing Protocol
+AMP - Application Performance Monitoring
+
