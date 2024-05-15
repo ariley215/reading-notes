@@ -30,3 +30,4 @@ AMQP - Advanced Messaging Queueing Protocol
 AMP - Application Performance Monitoring
 CDN - Content Delivery Network
 BGP - Border Gateway Protocol
+TTL - time-to-live
