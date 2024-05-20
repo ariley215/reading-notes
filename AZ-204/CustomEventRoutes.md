@@ -1,4 +1,4 @@
-# Exercise - Route custom events to web endpoint by using Azure CLI
+# Route custom events to web endpoint by using Azure CLI
 
 ## Prerequisites
 

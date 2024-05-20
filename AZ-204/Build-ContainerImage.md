@@ -1,5 +1,3 @@
-Okay, got it. Here is the content you provided in markdown format:
-
 ## Build and run a container image by using Azure Container Registry Tasks
 
 ### Completed

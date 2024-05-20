@@ -182,6 +182,8 @@ Welcome to my notes for Code Fellows
 
 ## AZ-204
 
+[Acronyms](AZ-204/Acronyms.md)
+
 [Explore Azure App Service](AZ-204/Module-1.md)
 
 [Configure Web App Settings](AZ-204/Module-2.md)
@@ -237,3 +239,31 @@ Welcome to my notes for Code Fellows
 [Develop for Azure Cache for Redis](AZ-204/Module-27.md)
 
 [Develop for Storage on CDNs](AZ-204/Module-28.md)
+
+### Exercise Instructions
+
+[Create static HTML app](AZ-204/CreateHTMLApp.md)
+
+[Create Blob Storage](AZ-204/Create-Blob.md)
+
+[Create Resources](AZ-204/Create-Resources-HowTo.md)
+
+[Create Backend API](AZ-204/Create-API.md)
+
+[Send and Receive Messages from a Service Bus Queue](AZ-204/ServiceBus-SendMessage.md)
+
+[Build and Run a Container Image](AZ-204/Build-ContainerImage.md)
+
+[Deploy Container Instance](AZ-204/DeployContain.md)
+
+[Initializing MSAL Client Applications](AZ-204/ImplementInteractiveAuthentication.md)
+
+[Interact with Azure Content Delivery Networks](AZ-204/InteractCDN.md)
+
+[Route Custom Events to Web Endpoint](AZ-204/CustomEventRoutes.md)
+
+[Set and Retrieve a Secret From Azure Key Vault](AZ-204/AKV-secret.md)
+
+[Connect an App to Azure Cache for Redis](AZ-204/AzureCache-Exercise.md)
+
+[Interact with Azure Content Delivery Networks](AZ-204/InteractCDN.md)
