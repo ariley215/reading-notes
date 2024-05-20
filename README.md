@@ -4,7 +4,7 @@ Welcome to my notes for Code Fellows
 
 👋 Hi, I'm Andrea
 
-- The Princess Bride is the best movie of all time 
+- The Princess Bride is the best movie of all time
 - I love music (of the EDM, Hip-Hop, and RnB persuasion)
 - I think animals are more tolerable than most people
 
@@ -195,3 +195,45 @@ Welcome to my notes for Code Fellows
 [Azure Functions Development](AZ-204/module-6.md)
 
 [Explore Blob Storage](AZ-204/Module-7.md)
+
+[Explore the Azure Blob Storage Lifecycle](AZ-204/Module-8.md)
+
+[Working with Blob Storage](AZ-204/Module-9.md)
+
+[Explore Azure Cosmos DB](AZ-204/Module-10.md)
+
+[Work with Cosmos DB](AZ-204/Module-11.md)
+
+[Manage Container Images in Azure Container Registry](AZ-204/Module-12.md)
+
+[Run Container Images](AZ-204/Module-13.md)
+
+[Implement Azure Container Apps](AZ-204/Module-14.md)
+
+[Explore the Microsoft Identity Platform](AZ-204/Module-15.md)
+
+[Implement Authentication by using the Microsoft Authentication Library](AZ-204/Module-16.md)
+
+[Implement Shared Access Signature](AZ-204/Module-17.md)
+
+[Explore Microsoft Graph](AZ-204/Module-18.md)
+
+[Implement Azure Key Vault](AZ-204/Module-19.md)
+
+[Implement Managed Identities](AZ-204/Module-20.md)
+
+[Implement Azure App Configuration](AZ-204/Module-21.md)
+
+[Explore API Management](AZ-204/Module-22.md)
+
+[Explore Azure Event Grid](AZ-204/Module-23.md)
+
+[Explore Azure Event Hubs](AZ-204/Module-24.md)
+
+[Discover Azure Message Queues](AZ-204/Module-25.md)
+
+[Monitor App Performance](AZ-204/Module-26.md)
+
+[Develop for Azure Cache for Redis](AZ-204/Module-27.md)
+
+[Develop for Storage on CDNs](AZ-204/Module-28.md)

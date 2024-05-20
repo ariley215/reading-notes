@@ -1,4 +1,4 @@
-# Explore the Azure Blob Storgae Lifecycle
+# Explore the Azure Blob Storage Lifecycle
 
 Objectives:
 
