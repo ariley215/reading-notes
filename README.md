@@ -268,5 +268,11 @@ Welcome to my notes for Code Fellows
 
 [Interact with Azure Content Delivery Networks](AZ-204/InteractCDN.md)
 
-## Microsoft Defender
+## AZ-900
+
+## MS-102
+
+## SC-200
+
+
 
