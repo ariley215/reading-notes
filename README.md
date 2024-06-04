@@ -267,3 +267,6 @@ Welcome to my notes for Code Fellows
 [Connect an App to Azure Cache for Redis](AZ-204/AzureCache-Exercise.md)
 
 [Interact with Azure Content Delivery Networks](AZ-204/InteractCDN.md)
+
+## Microsoft Defender
+
