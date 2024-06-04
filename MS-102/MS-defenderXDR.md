@@ -293,4 +293,85 @@ Spoof intelligence insight allows organizations to identify and manage unauthent
 - Utilize Threat Explorer for in-depth analysis of senders and messages.
 - Train staff on identifying and reporting suspected spoofing attempts.
 
-By following these guidelines and understanding the functionalities of spoof intelligence, organizations can effectively manage legitimate spoofing while blocking malicious activities._
+# Configure Outbound Spam Filtering Policies
+
+## Overview
+
+Outbound spam filtering is critical for maintaining the integrity and reputation of an organization's email system. Exchange Online Protection (EOP) checks outbound emails for spam and unusual activity. Outbound spam may indicate a compromised account.
+
+## Outbound Spam Policies
+
+EOP uses outbound spam policies to help prevent spam. Admins can view, edit, and configure the default policy and create custom policies for specific users, groups, or domains.
+
+### Creating Outbound Spam Policies
+
+Outbound spam policies can be configured in the Microsoft Defender portal or using PowerShell.
+
+#### Microsoft Defender Portal
+
+- **URL**: [Microsoft Defender Portal](https://security.microsoft.com)
+- **Navigation**: Email & Collaboration > Policies & Rules > Threat policies > Anti-spam
+
+#### Exchange Online PowerShell
+
+- For organizations with Exchange Online mailboxes.
+- Use the `*-HostedOutboundSpamFilterPolicy` and `*-HostedOutboundSpamFilterRule` cmdlets.
+
+#### Standalone EOP PowerShell
+
+- For organizations without Exchange Online mailboxes.
+- Use the same cmdlets as Exchange Online PowerShell.
+
+### Elements of an Outbound Spam Policy
+
+- **Outbound Spam Filter Policy**: Specifies actions and notifications.
+- **Outbound Spam Filter Rule**: Specifies priority and sender filters.
+
+### Default Policy
+
+- The default policy named "Default" applies to all senders and cannot be deleted.
+
+## Creating Custom Outbound Spam Policies in the Microsoft Defender Portal
+
+1. Navigate to Anti-spam policies.
+2. Select "Create policy" and choose "Outbound".
+3. Provide a unique name and description for the policy.
+4. Specify internal senders the policy applies to (users, groups, domains).
+5. Configure message limits and actions for exceeding limits.
+6. Control automatic email forwarding to external senders.
+7. Set up notifications for suspicious outbound email messages.
+8. Review settings and select "Create".
+
+## Configure Outbound Spam Policies in Exchange PowerShell
+
+### Step 1: Create an Outbound Spam Filter Policy
+
+```powershell
+New-HostedOutboundSpamFilterPolicy -Name "PolicyName" -AdminDisplayName "Comments" <Additional Settings>
+```
+
+**Example:**
+
+```powershell
+New-HostedOutboundSpamFilterPolicy -Name "Contoso Executives" -RecipientLimitExternalPerHour 400 -RecipientLimitInternalPerHour 800 -RecipientLimitPerDay 800 -ActionWhenThresholdReached BlockUser
+```
+
+### Step 2: Create an Outbound Spam Filter Rule
+
+```powershell
+New-HostedOutboundSpamFilterRule -Name "RuleName" -HostedOutboundSpamFilterPolicy "PolicyName" <Sender filters> [<Sender filter exceptions>] [-Comments "OptionalComments"]
+```
+
+**Example:**
+
+```powershell
+New-HostedOutboundSpamFilterRule -Name "Contoso Executives" -HostedOutboundSpamFilterPolicy "Contoso Executives"
+```
+
+## Best Practices
+
+- Regularly review and update outbound spam policies.
+- Implement stricter settings for sensitive roles or groups within the organization.
+- Monitor the effectiveness of policies and adjust as necessary.
+- Train users on best practices to prevent account compromise.
+
