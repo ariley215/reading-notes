@@ -69,106 +69,26 @@ Microsoft 365 subscriptions include a set of admin roles for assigning to users 
 
 ### Commonly Assigned Roles
 
-|
- Admin role (alphabetical order) 
-|
- Who should be assigned this role? 
-|
-|
----
-|
----
-|
-|
- Billing administrator 
-|
- Assign the Billing admin role to users who make purchases, manage subscriptions, service requests, and monitor service health. Billing admins also can: Manage all aspects of billing and create/manage support tickets in the Microsoft Entra admin center. 
-|
-|
- Compliance administrator 
-|
- Assign the Compliance admin role to users who are responsible for helping your organization stay compliant with regulatory requirements, manage eDiscovery cases, maintain data governance policies, and manage compliance alerts. 
-|
-|
- Exchange administrator 
-|
- Assign the Exchange admin role to users who need to view and manage your user's email mailboxes, Microsoft 365 groups, and Exchange Online. 
-|
-|
- Global administrator 
-|
- Assign the Global administrator role to users who need global access to most management features and data across Microsoft online services. 
-|
-|
- Global reader 
-|
- Assign the global reader role to users who need to view admin features and settings in admin centers that the global admin can view. The global reader admin can't edit any settings. 
-|
-|
- Groups administrator 
-|
- Assign the groups admin role to users who need to manage all groups settings across admin centers. 
-|
-|
- Helpdesk administrator 
-|
- Assign the Helpdesk admin role to users who must complete tasks such as resetting passwords and managing service requests. 
-|
-|
- License administrator 
-|
- Assign the License admin role to users who need to assign and remove licenses from users and edit their usage location. 
-|
-|
- Office Apps administrator 
-|
- Assign the Office Apps admin role to users who must manage Office cloud policies and monitor service health. 
-|
-|
- Password administrator 
-|
- Assign the Password admin role to a user who needs to reset passwords for nonadministrators and Password Administrators. 
-|
-|
- Message center reader 
-|
- Assign the Message center reader role to users who must monitor message center notifications and share posts. 
-|
-|
- Power Platform administrator 
-|
- Assign the Power Platform admin role to users who must manage admin features for Power Apps, Power Automate, and DLP policies. 
-|
-|
- Reports reader 
-|
- Assign the Reports reader role to users who must view usage data and activity reports. 
-|
-|
- Security administrator 
-|
- Assign the Security admin role to admins who control your organization's overall security. 
-|
-|
- Service Support administrator 
-|
- Assign the Service Support admin role as an extra role to admins or users who must open and manage service requests. 
-|
-|
- SharePoint administrator 
-|
- Assign the SharePoint admin role to users who need to access and manage the SharePoint Online admin center. 
-|
-|
- Teams administrator 
-|
- Assign the Teams administrator role to users who need to access and manage the Teams admin center. 
-|
-|
- User administrator 
-|
- Assign the User admin role to users who must manage user properties, licenses, and passwords. 
-|
+| Admin role (alphabetical order) | Who should be assigned this role? |
+| -------------------------------- | --------------------------------- |
+| Billing administrator            | Users who manage purchases, subscriptions, service requests, and service health. |
+| Compliance administrator         | Users responsible for regulatory compliance, eDiscovery cases, and data governance. |
+| Exchange administrator           | Users managing email mailboxes, Microsoft 365 groups, and Exchange Online. |
+| Global administrator             | Users who need global access to most management features and data across Microsoft services. |
+| Global reader                    | Users who need to view (but not edit) admin features and settings. |
+| Groups administrator             | Users managing group settings across admin centers. |
+| Helpdesk administrator           | Users who reset passwords, manage service requests, and monitor service health. |
+| License administrator            | Users who assign and remove licenses, and manage usage locations. |
+| Office Apps administrator        | Users managing Office cloud policies and service health. |
+| Password administrator           | Users who reset passwords for non-administrators and Password Administrators. |
+| Message center reader            | Users who monitor message center notifications and share posts. |
+| Power Platform administrator     | Users managing admin features for Power Apps, Power Automate, and DLP policies. |
+| Reports reader                   | Users who view usage data and activity reports. |
+| Security administrator           | Admins controlling overall security, managing security policies and incidents. |
+| Service Support administrator    | Admins or users who open and manage service requests. |
+| SharePoint administrator         | Users who access and manage the SharePoint Online admin center. |
+| Teams administrator              | Users who access and manage the Teams admin center. |
+| User administrator               | Users who manage user properties, licenses, and passwords. |
 
 ### Tip
 - Use **Show all by Category** at the bottom of the role list for a categorized view of roles.

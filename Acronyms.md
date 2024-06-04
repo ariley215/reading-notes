@@ -31,3 +31,8 @@ AMP - Application Performance Monitoring
 CDN - Content Delivery Network
 BGP - Border Gateway Protocol
 TTL - time-to-live
+
+
+SPF- Sender Policy Framework
+DMARC - Domain-based Message Authentication, Reporting, and Conformance
+DKIM - DomainKeys Identified Mail

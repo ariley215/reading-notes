@@ -12,6 +12,8 @@ Welcome to my notes for Code Fellows
 
 ## Table of Contents
 
+[Acronyms](Acronyms.md)
+
 ### 102 Notes
 
 [Growth Mindset](102-Notes/GrowthMidset.md)
@@ -181,8 +183,6 @@ Welcome to my notes for Code Fellows
 [HTML Form Elements](Cousera-HTML/CSS-Notes/HTMLformElements.md)
 
 ## AZ-204
-
-[Acronyms](AZ-204/Acronyms.md)
 
 [Explore Azure App Service](AZ-204/Module-1.md)
 
