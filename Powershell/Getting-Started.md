@@ -21,3 +21,11 @@ $data = get-service | where-Object Satus -eq 'Stopped' | select-object Name, Sta
 $data | out-file .\services.csv
 notepad .\services.csv
 # opens in the notepad app
+$data | export-csv .\Services2.csv
+get-content .\services2.csv
+# pulls content from the file into Powershell
+#out put will be the data comma seperated and ready for excel
+$ImportData = import-csv -Path .\services2.csv
+# this will bring the data back into Powershell
+```
+use 'get-content' if you want to parse a text file or other data source
