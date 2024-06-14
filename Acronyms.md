@@ -1,5 +1,7 @@
 # Industry standard acronyms.
 
+## Azure
+
 RBAC - Role-Based Access Control
 VM - Virtual Machine
 URI - Uniform Resource Identifier
@@ -32,7 +34,11 @@ CDN - Content Delivery Network
 BGP - Border Gateway Protocol
 TTL - time-to-live
 
+## Security
 
 SPF- Sender Policy Framework
 DMARC - Domain-based Message Authentication, Reporting, and Conformance
 DKIM - DomainKeys Identified Mail
+DLP - Data Loss Prevention
+
+DSC - Desired State Configuration
