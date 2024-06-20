@@ -40,5 +40,7 @@ SPF- Sender Policy Framework
 DMARC - Domain-based Message Authentication, Reporting, and Conformance
 DKIM - DomainKeys Identified Mail
 DLP - Data Loss Prevention
-
+CIS - Center for Internet Security
+IAM - Identity and access management
+MFA - Multifactor Authentication
 DSC - Desired State Configuration

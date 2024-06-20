@@ -10,7 +10,15 @@ Parameters
 - pass information to the PowerShell command to execute.
 - start with a dash, like ‑Name, or ‑RequiredServices
   - -Name parameter accepts a value; '-Name Spooler'
-  - -RequiredServices is a switch parameter; it doesn't accept a value
+  - -RequiredServices is a switch parameter; it doesn't accept a value+
+
+Three commands everyone needs to know to understand how PowerShell works with PS:
+
+- Get‑Command
+- Get‑Help
+  - the '‑examples' parameter as a good way to skip the line and go right to how commands work.
+- Get‑Member
+  -see the properties, methods, and other information attached to an object
 
 | Command   | Alias | Category | Description                                                                        |
 |-----------|-------|----------|------------------------------------------------------------------------------------|
@@ -39,3 +47,79 @@ Parameters
 | Resize    | rz    | Common   | Changes the size of a resource                                                     |
 | Search    | sr    | Common   | Creates a reference to a resource in a container                                   |
 | Select    | sc    | Common   | Locates a resource in a container                                                  |
+| Set          | s     | Common         | Replaces data on an existing resource or creates a resource that contains some data |
+| Show         | sh    | Common         | Makes a resource visible to the user                                        |
+| Skip         | sk    | Common         | Bypasses one or more resources or points in a sequence                      |
+| Split        | sl    | Common         | Separates parts of a resource                                               |
+| Step         | st    | Common         | Moves to the next point or resource in a sequence                           |
+| Switch       | sw    | Common         | Specifies an action that alternates between two resources                   |
+| Undo         | un    | Common         | Sets a resource to its previous state                                       |
+| Unlock       | uk    | Common         | Releases a resource that was locked                                         |
+| Watch        | wc    | Common         | Continually inspects or monitors a resource for changes                     |
+| Connect      | cc    | Communications | Creates a link between a source and a destination                           |
+| Disconnect   | dc    | Communications | Breaks the link between a source and a destination                          |
+| Read         | rd    | Communications | Acquires information from a source                                          |
+| Receive      | rc    | Communications | Accepts information sent from a source                                      |
+| Send         | sd    | Communications | Delivers information to a destination                                       |
+| Write        | wr    | Communications | Adds information to a target                                                |
+| Backup       | ba    | Data           | Stores data by replicating it                                               |
+| Checkpoint   | ch    | Data           | Creates a snapshot of the current state of the data or its configuration    |
+| Compare      | cr    | Data           | Evaluates the data from one resource against the data from another resource |
+| Compress     | cm    | Data           | Compacts the data of a resource                                             |
+| Convert      | cv    | Data           | Changes the data from one representation to another                         |
+| ConvertFrom  | cf    | Data           | Converts one primary type of input to another                               |
+| ConvertTo    | ct    | Data           | Converts from one or more types of input to a primary output type           |
+| Dismount     | dm    | Data           | Detaches a named entity from a location                                     |
+| Edit         | ed    | Data           | Modifies existing data by adding or removing content                        |
+| Expand       | en    | Data           | Restores the data of a resource that has been compressed to its original state |
+| Export       | ep    | Data           | Encapsulates the primary input into a persistent data store                 |
+| Group        | gp    | Data           | Arranges or associates one or more resources                                |
+| Import       | ip    | Data           | Creates a resource from data that is stored in a persistent data store      |
+| Initialize   | in    | Data           | Prepares a resource for use, and sets it to a default state                 |
+| Limit        | l     | Data           | Applies constraints to a resource                                           |
+| Merge        | mg    | Data           | Creates a single resource from multiple resources                           |
+| Mount        | mt    | Data           | Attaches a named entity to a location                                       |
+| Out          | o     | Data           | Sends data out of the environment                                           |
+| Publish      | pb    | Data           | Makes a resource available to others                                        |
+| Restore      | rr    | Data           | Sets a resource to a predefined state                                       |
+| Save         | sv    | Data           | Preserves data to avoid loss                                                |
+| Sync         | sy    | Data           | Assures that two or more resources are in the same state                    |
+| Unpublish    | ub    | Data           | Makes a resource unavailable to others                                      |
+| Update       | ud    | Data           | Brings a resource up-to-date to maintain its state, accuracy, conformance   |
+| Debug        | db    | Diagnostic     | Examines a resource to diagnose operational problems                        |
+| Measure      | ms    | Diagnostic     | Identifies resources consumed by a specified operation, or retrieves statistics |
+| Ping         | pi    | Diagnostic     | Use the Test verb                                                           |
+| Repair       | rp    | Diagnostic     | Restores a resource to a usable condition                                   |
+| Resolve      | rv    | Diagnostic     | Maps a shorthand representation of a resource to a more complete representation |
+| Test         | t     | Diagnostic     | Verifies the operation or consistency of a resource                         |
+| Trace        | tr    | Diagnostic     | Tracks the activities of a resource                                         |
+| Approve      | ap    | Lifecycle      | Confirms or agrees to the status of a resource or process                   |
+| Assert       | as    | Lifecycle      | Affirms the state of a resource                                             |
+| Build        | bd    | Lifecycle      | Creates an artifact from a set of input files                               |
+| Complete     | cmp   | Lifecycle      | Concludes an operation                                                      |
+| Confirm      | cn    | Lifecycle      | Acknowledges, verifies, or validates the state of a resource or process     |
+| Deny         | dn    | Lifecycle      | Refuses, objects, blocks, or opposes the state of a resource or process     |
+| Deploy       | dp    | Lifecycle      | Sends an application, website, or solution to a remote target               |
+| Disable      | d     | Lifecycle      | Configures a resource to an unavailable or inactive state                   |
+| Enable       | e     | Lifecycle      | Configures a resource to an available or active state                       |
+| Install      | is    | Lifecycle      | Places a resource in a location, and optionally initializes it              |
+| Invoke       | i     | Lifecycle      | Performs an action, such as running a command or a method                   |
+| Register     | rg    | Lifecycle      | Creates an entry for a resource in a repository                             |
+| Request      | rq    | Lifecycle      | Asks for a resource or permissions                                          |
+| Restart      | rt    | Lifecycle      | Stops an operation and then starts it again                                 |
+| Resume       | ru    | Lifecycle      | Starts an operation that has been suspended                                 |
+| Start        | sa    | Lifecycle      | Initiates an operation                                                      |
+| Stop         | sp    | Lifecycle      | Discontinues an activity                                                    |
+| Submit       | sb    | Lifecycle      | Presents a resource for approval                                            |
+| Suspend      | ss    | Lifecycle      | Pauses an activity                                                          |
+| Uninstall    | us    | Lifecycle      | Removes a resource from an indicated location                               |
+| Unregister   | ur    | Lifecycle      | Removes the entry for a resource from a repository                          |
+| Wait         | w     | Lifecycle      | Pauses an operation until a specified event occurs                          |
+| Use          | u     | Other          | Uses or includes a resource to do something                                 |
+| Block        | bl    | Security       | Restricts access to a resource                                              |
+| Grant        | gr    | Security       | Allows access to a resource                                                 |
+| Protect      | pt    | Security       | Safeguards a resource from attack or loss                                   |
+| Revoke       | rk    | Security       | Specifies an action that does not allow access to a resource                |
+| Unblock      | ul    | Security       | Removes restrictions to a resource                                          |
+| Unprotect    | up    | Security       | Removes safeguards from a resource                                          |
+
