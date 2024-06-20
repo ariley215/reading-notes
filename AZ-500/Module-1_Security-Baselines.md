@@ -51,4 +51,80 @@ IAM recommendations that are in CIS Microsoft Azure Foundations Security Benchma
 1. In the All users menu bar, select Per-user MFA.
 1. In the multifactor authentication window, ensure that multifactor authentication Status is set to Enabled for all users. To enable multifactor authentication, select a user. Under quick steps, select Enable > enable multifactor authentication.
 
-Users can bypass subsequent verifications for a specified number of days after they've successfully signed in to a device by using MFA
+### Don't remember multifactor authentication on trusted devices - Level 2
+
+Users can bypass subsequent verifications for a specified number of days after they've successfully signed in to a device by using MFA.
+
+- free feature for all MFA users.
+- Security recommendation is to turn off remembering multifactor authentication for trusted devices.
+
+1. Sign in to the Azure portal. Search for and select Microsoft Entra ID.
+1. In the left menu under Manage, select Users.
+1. In the All users menu bar, select Per-user MFA.
+1. In the multifactor authentication window, select a user. Under quick steps, select Manage user settings.
+1. Select the Restore multifactor authentication on all remembered devices checkbox, and then select Save.
+
+### No or limited-access guest users - Level 1
+
+1. Sign in to the Azure portal. Search for and select Microsoft Entra ID.
+1. In the left menu under Manage, select Users.
+1. Select the Add filters button.
+1. For Filters, select User type. For Value, select Guest. Select Apply to verify that no guest users exist.
+
+### Password options
+
+- Notify users on password resets - Level 1
+- Require two methods to reset passwords - Level 1
+- Notify all admins when other admins reset passwords - Level 2
+
+1. Sign in to the Azure portal. Search for and select Microsoft Entra ID.
+1. In the left menu under Manage, select Users.
+1. In the left menu, select Password reset.
+1. In the left menu under Manage, select Authentication methods.
+1. Set the Number of methods required to reset to 2.
+
+### Establish an interval for reconfirming user authentication methods - Level 1
+
+This is the more secure option
+
+1. Sign in to the Azure portal. Search for and select Microsoft Entra ID.
+1. In the left menu under Manage, select Users.
+1. In the left menu pane, select Password reset.
+1. In the left menu under Manage, select Registration.
+1. Ensure that Number of days before users are asked to re-confirm their authentication information is not set to 0. The default is 180 days.
+
+### Guest invite setting - Level 2
+
+1. Sign in to the Azure portal. Search for and select Microsoft Entra ID.
+1. In the left menu under Manage, select Users.
+1. In the left menu, select User settings.
+1. In the User settings pane, under External users, select Manage external collaboration settings.
+1. In External collaboration settings, under Guest invite settings, select Only users assigned to specific admin roles can invite guest users.
+
+### Users can create and manage security groups - Level 2
+
+Security group creation should be restricted to administrators, not all users.
+
+1. Sign in to the Azure portal. Search for and select Microsoft Entra ID.
+1. In the left menu under Manage, select Groups.
+1. In the All groups pane, in the left menu under Settings, select General.
+1. For Security Groups, ensure that Users can create security groups in Azure portals, API or PowerShell is set to No.
+
+### Self-service group management enabled - Level 2
+
+Safety recommendation is to disable this feature.
+
+1. Sign in to the Azure portal. Search for and select Microsoft Entra ID.
+1. In the left menu under Manage, select Groups.
+1. In the All groups pane, in the left menu under Settings, select General.
+1. Under Self Service Group Management, ensure that all options are set to No.
+1. If you change any settings, in the menu bar, select Save.
+
+### Application options - Allow users to register apps - Level 2
+
+1. Require administrators to register custom applications.
+1. Sign in to the Azure portal. Search for and select Microsoft Entra ID.
+1. In the left menu under Manage, select Users.
+1. In the left menu, select User settings.
+1. In the User settings pane, ensure that App registrations is set to No.
+1. If you change any settings, in the menu bar, select Save.
