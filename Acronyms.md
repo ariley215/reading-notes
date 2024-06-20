@@ -18,6 +18,7 @@ URI - Uniform resource identifier
 SSE - Storage Service Encryption
 Dapr - Distributed Application Runtime
 IaC - Infrastructure as Code
+IaaS - Infrastructure as a Service
 ARM - Azure Resource Manager
 MSAL - Microsoft Authentication Libraries
 GUID - Globally Unique Identifier
