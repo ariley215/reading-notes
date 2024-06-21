@@ -45,3 +45,6 @@ CIS - Center for Internet Security
 IAM - Identity and access management
 MFA - Multifactor Authentication
 DSC - Desired State Configuration
+NSG - Network Security Group
+ACL - Access Control List
+TDE - Transparent Data Encryption
