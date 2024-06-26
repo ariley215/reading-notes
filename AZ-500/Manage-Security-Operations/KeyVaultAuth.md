@@ -56,4 +56,3 @@ Authentication with Azure Key Vault works in conjunction with Microsoft Entra ID
 
 - Key Vault SDK clients for secrets, certificates, and keys may make an initial call without an access token, resulting in a 401 response to retrieve tenant information before authenticating properly.
 
-This guide covers the key concepts of Azure Key Vault authentication that are important for the AZ-500 certification exam. Understanding these concepts is crucial for securing access to Key Vault and managing identities within Azure.

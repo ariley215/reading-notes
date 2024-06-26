@@ -55,4 +55,3 @@
 - It may take up to 15 minutes for networking changes to take effect.
 - Always review the latest Azure documentation and best practices to ensure your Key Vault is configured securely.
 
-This guide outlines the steps to create and configure an Azure Key Vault, which is essential knowledge for the AZ-500 certification exam. It includes instructions on setting up the Key Vault, as well as configuring networking settings to secure access to the vault.
