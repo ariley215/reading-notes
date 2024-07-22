@@ -436,7 +436,6 @@ Select only one answer.
 
 *DLP examines email messages and files for sensitive information, such as a credit card number. By using DLP, you can detect sensitive information and take action, such as log the event for auditing purposes, display a warning to the end user, or prevent access to files that contain sensitive information.*[Learn More](https://learn.microsoft.com/microsoft-365/compliance/insider-risk-management-policies?view=o365-worldwide)
 
-
 You have a hybrid Microsoft Entra tenant and a Microsoft 365 E5 subscription.
 
 You need to review all changes made to the Active Directory Enterprise Admins group during the last 14 days.
@@ -448,7 +447,7 @@ Select only one answer.
 - the Microsoft Entra ID Provisioning Analysis workbook
 - the Microsoft Entra ID Sensitive Operations Report workbook
 - the Microsoft Defender for Cloud Apps Cloud Discovery users page
-- the Microsoft Defender for Identity Modifications to sensitive groups report
+- **the Microsoft Defender for Identity Modifications to sensitive groups report**
 
 *The Defender for Identity Modifications to sensitive groups report lists every time a modification is made to sensitive groups, such as admin or manually tagged accounts or groups.*
 
@@ -459,3 +458,135 @@ Select only one answer.
 *The Defender for Cloud Apps Cloud Discovery dashboard is designed to give you more insight into how cloud apps are being used in your organization. It provides an at-a-glance overview of which kinds of apps are being used, your open alerts, and the risk levels of apps in your organization.*
 
 *The Microsoft Entra ID Sensitive Operations Report workbook is intended to help identify suspicious application and service principal activity that may indicate compromises in your environment.*
+
+You have a hybrid Microsoft Entra tenant and a Microsoft 365 E5 subscription.
+
+You need to identify any high-risk users that have performed a password reset during the last 14 days.
+
+What should you use?
+
+Select only one answer.
+
+- the Identity Protection risk analysis workbook in Microsoft Entra ID
+- the Sensitive Operations Report workbook in Microsoft Entra ID
+- the Risky sign-ins report in Microsoft Entra ID Protection
+- **the Risky users report in Microsoft Entra ID Protection**
+
+*The Risky users report allows you to review risky sign-ins and flag each one as either safe or compromised based on the results of an investigation and the information provided by the console. The information can be filtered by using the filters across the top of the report. The Risky users report has a filter for risk detail that includes the following setting: User performed secured password reset.*
+
+*The Risky sign-ins report displays a list of user accounts that are considered risky.*
+
+*The Microsoft Entra Identity Protection risk analysis workbook helps you analyze the state of risk in your organization.*
+
+*The Microsoft Entra Sensitive Operations Report workbook is intended to help identify suspicious application and service principal activity that may indicate compromises in your environment.*
+
+You have a hybrid Microsoft 365 E5 subscription.
+
+You need to monitor an Active Directory Domain Services (AD DS) domain and identify and investigate any detected threats.
+
+What should you use?
+
+Select only one answer.
+
+- Microsoft Entra ID Protection
+- Microsoft Defender for Endpoints
+- **Microsoft Defender for Identity**
+- Microsoft Defender for Office 365
+
+*Defender for Identity is a cloud-based security solution that leverages your on-premises Active Directory signals to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.*
+
+*Microsoft Entra ID Protection uses the learnings acquired by Microsoft from its position in organizations by using Microsoft Entra ID, the consumer space with Microsoft accounts, and in gaming with Xbox to protect your users. Microsoft analyses trillions of signals per day to identify and protect customers from threats.*
+
+*Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks prevent, detect, investigate, and respond to advanced threats.*
+
+*Defender for Office 365 is a cloud-based email filtering service that protects your business from threats to email and collaboration tools.*
+
+You have a Microsoft 365 E5 subscription that uses Microsoft Defender for Cloud.
+
+You have a lab environment that uses an IP address range of 14.38.2.0/24.
+
+You receive multiple alerts from the lab environment.
+
+You need to remove all alerts that originate from the lab environment network. The solution must meet the following requirements:
+
+Automatically close all future alerts from the lab environment.
+Minimize administrative effort.
+What should you create?
+
+Select only one answer.
+
+- a firewall policy
+- a logic app
+- **a suppression rule**
+- an automation rule
+
+*When a single alert is not interesting or relevant, you can manually dismiss it. Alternatively, use suppression rules to automatically dismiss similar alerts in the future. Typically, you use a suppression rule to:*
+
+*Suppress alerts that you identified as false positives.*
+
+*Suppress alerts that are being triggered too often to be useful.*
+
+*Your suppression rules define the criteria for which alerts should be automatically dismissed.*
+
+*An automation rule cannot be configured for Defender for Cloud alerts.*
+
+*A firewall policy will not prevent the creation of all alerts.*
+
+*The triggers and actions available with the Defender for Cloud connector does not allow for the closure of alerts.*
+
+You have an Azure virtual machine named VM1 that runs Windows Server and is protected by using Microsoft Defender for Cloud.
+
+Defender for Cloud generates multiple alerts for VM1. You review the alerts and establish that the alerts are false positives.
+
+You need to prevent new VM1 alerts from being shown in Defender for Cloud for seven days.
+
+What should you do?
+
+Select only one answer.
+
+- Create a suppression rule.
+- Modify the alert processing rule.
+- Modify the alert rule.
+- Modify the diagnostic settings for VM1.
+
+*When a single alert is not interesting or relevant, you can manually dismiss it. Alternatively, you can use the suppression rules to automatically dismiss similar alerts in the future. Typically, you use a suppression rule to suppress alerts that you identified as false positives or alerts that are being triggered too often to be useful.*
+
+*Alert rules and suppression rules are used by Azure Monitor, not by Defender for Cloud.*
+
+*Diagnostic settings control where resource logs are sent (storage account, Log Analytics workspace, or event hub).*
+[Learn More](https://learn.microsoft.com/azure/defender-for-cloud/alerts-suppression-rules)
+
+Your company uses Microsoft Defender for Cloud.
+
+You need to create a Defender for Cloud workflow automation.
+
+What should you create first?
+
+Select only one answer.
+
+- **a logic app**
+- a storage account
+- an App Service app
+- an automation account
+
+*Workflow automation in Defender for Cloud can trigger Logic Apps on security alerts, recommendations, and changes to regulatory compliance. For example, you might want Defender for Cloud to email a specific user when an alert occurs. If you want to create workflow automation, you must configure it with an already existing logic app, which will be triggered by the workflow automation. As such, you must first create a logic app, and only after that, you can create a workflow automation in Defender for Cloud.*
+[Learn More](https://learn.microsoft.com/azure/defender-for-cloud/workflow-automation)
+
+You have a Microsoft 365 E5 subscription that uses Microsoft Defender for Endpoint and contains a device named Device1.
+
+Device1 triggered a high-severity alert.
+
+You need to review the events that occurred before the alert was triggered.
+
+What should you do in the Microsoft Defender portal?
+
+Select only one answer.
+
+- From the Device page, select Go hunt.
+- **From the Device page, select the Timeline tab.**
+- From the Microsoft Defender portal, query for Device1 in Advanced Hunting.
+
+*You can review the events that occurred before the high-severity alert was triggered by selecting the Timeline tab from the Device page.*
+
+*Go hunt is used once an event is selected to hunt for other relevant events in Advanced Hunting, and Advanced Hunting allows you to proactively hunt for threats.*
+[Learn More](https://learn.microsoft.com/training/modules/mitigate-incidents-microsoft-365-defender/)
